@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="계획표">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>계획표</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;background:#e9eae4;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:"Pretendard","Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic","맑은 고딕",sans-serif}
+
+#wrap{
+  --bg:#e9eae4; --surf:#fff; --surf2:#f4f5f0;
+  --txt:#000; --txt2:#5f5f58; --txt3:#a3a39a; --line:#000;
+  --acc:#5b2bc9; --accbg:#efe9fc; --acctxt:#fff;
+  --gold:#e0a020; --goldbg:#fdf1d8; --goldtxt:#000; --bad:#c0392b;
+  --r:0px; --rs:0px; --bw:1.5px; --sh:none; --hero:3px;
+  background:var(--bg); color:var(--txt);
+  margin:0 auto; max-width:620px; padding:0 12px 104px;
+  font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  transition:background .2s,color .2s; touch-action:manipulation;
+}
+#wrap h1,#wrap h2,#wrap h3,#wrap p,#wrap ul,#wrap ol,#wrap table{margin:0}
+#wrap ul,#wrap ol{padding-left:1.15em}
+#wrap button{font-family:inherit;cursor:pointer;color:inherit;touch-action:manipulation}
+#wrap input,#wrap select{font-family:inherit;color:var(--txt)}
+
+.panel{background:var(--surf);border:var(--bw) solid var(--line);border-radius:var(--r);
+  box-shadow:var(--sh);padding:20px;margin:0 0 14px}
+.panel.flush{padding:0;overflow:hidden}
+.panel.hero{border-width:var(--hero)}
+.cap{font-size:13px;font-weight:800;color:var(--txt2);margin-bottom:12px}
+.sec{padding:20px 20px 14px}.sec .cap{margin:0}
+
+/* 상단바 */
+.topbar{position:sticky;top:0;z-index:40;background:var(--bg);padding:14px 0 12px;
+  display:flex;align-items:center;gap:9px}
+.topbar .d{font-size:17px;font-weight:800;white-space:nowrap}
+.topbar .ph{font-size:11.5px;font-weight:800;color:var(--acctxt);background:var(--acc);
+  padding:3px 9px;border-radius:calc(var(--rs) + 2px);white-space:nowrap}
+.topbar .sp{flex:1}
+.tgl{width:56px;height:32px;border-radius:16px;background:var(--surf2);border:var(--bw) solid var(--line);
+  position:relative;padding:0;flex:0 0 auto;box-shadow:var(--sh)}
+.tgl i{position:absolute;top:2px;left:2px;width:24px;height:24px;border-radius:12px;
+  background:var(--gold);display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-style:normal;transition:left .2s,background .2s;color:var(--goldtxt)}
+#wrap[data-mode="dark"] .tgl i{left:calc(100% - 26px);background:var(--acc);color:var(--acctxt)}
+.tbtn{height:32px;padding:0 12px;border-radius:16px;background:var(--surf);
+  border:var(--bw) solid var(--line);font-size:13px;font-weight:800;flex:0 0 auto;box-shadow:var(--sh)}
+
+/* 지금 */
+.now .lbl{font-size:13px;font-weight:800;color:var(--txt2)}
+.now .act{font-size:31px;font-weight:800;letter-spacing:-.025em;line-height:1.22;margin:6px 0 4px;word-break:keep-all}
+.now .rng{font-size:15px;font-weight:800;color:var(--txt2)}
+.now .nxt{font-size:14px;color:var(--txt2);margin-top:14px;padding-top:13px;
+  border-top:1.5px dashed var(--txt3)}
+
+.todo{display:flex;gap:13px;padding:14px 0;border-top:1px solid var(--surf2);align-items:flex-start}
+.todo:first-child{border-top:0;padding-top:0}
+.todo .ic{flex:0 0 36px;height:36px;border-radius:var(--rs);background:var(--accbg);color:var(--acc);
+  display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800}
+.todo .h{font-size:12px;font-weight:800;color:var(--txt2)}
+.todo .b{font-size:15.5px;font-weight:700;word-break:keep-all;line-height:1.45}
+
+.stamps{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.stamp{background:var(--surf);border:var(--bw) solid var(--line);border-radius:var(--rs);
+  padding:14px 2px 11px;text-align:center;min-height:76px;box-shadow:var(--sh);
+  -webkit-transition:all .13s;transition:all .13s}
+.stamp .mk{font-size:23px;font-weight:800;line-height:1;display:block;color:var(--txt3)}
+.stamp .nm{font-size:12px;font-weight:800;margin-top:6px;display:block}
+.stamp[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);-webkit-transform:scale(.93);transform:scale(.93)}
+.stamp[aria-pressed="true"] .mk,.stamp[aria-pressed="true"] .nm{color:var(--goldtxt)}
+.stamp:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+
+.bar{height:16px;background:var(--surf2);border:var(--bw) solid var(--line);
+  border-radius:99px;position:relative;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc);border-radius:99px}
+.bar i.gold{background:var(--gold)} .bar i.bad{background:var(--bad)}
+.bar .gh{position:absolute;top:-2px;bottom:-2px;width:2.5px;background:var(--txt)}
+.brow{display:flex;justify-content:space-between;font-size:13px;font-weight:800;margin-top:8px;gap:8px}
+.brow .r{color:var(--txt2);font-weight:700;text-align:right}
+.big{font-size:42px;font-weight:800;letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}
+.sub{font-size:13.5px;color:var(--txt2);line-height:1.4}
+
+.cur{background:var(--goldbg);border:var(--bw) solid var(--line);border-radius:var(--r);padding:18px}
+.cur .nm{font-size:20px;font-weight:800;letter-spacing:-.02em}
+.cur .mt{font-size:13px;color:var(--txt2);margin-top:3px}
+.ctrl{display:flex;align-items:center;gap:9px;margin-top:16px}
+.ctrl .num{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;flex:1;line-height:1}
+.ctrl .num small{font-size:15px;color:var(--txt2);font-weight:700}
+.ctrl button{border:var(--bw) solid var(--line);border-radius:var(--rs);background:var(--surf);
+  font-size:16px;font-weight:800;min-width:52px;height:50px;padding:0 10px;box-shadow:var(--sh)}
+.ctrl button:active{background:var(--gold);color:var(--goldtxt)}
+
+.step{border-top:1px solid var(--surf2);padding:13px 20px;display:flex;align-items:center;gap:11px}
+.step:first-child{border-top:0}
+.step.done{background:var(--accbg)} .step.on{background:var(--goldbg)}
+.step .n{font-size:12px;font-weight:800;color:var(--txt3);flex:0 0 20px}
+.step .body{flex:1;min-width:0}
+.step .nm{font-size:15px;font-weight:700}
+.step .meta{font-size:11.5px;color:var(--txt2)}
+.step .cnt{font-size:16px;font-weight:800;flex:0 0 72px;text-align:right;font-variant-numeric:tabular-nums}
+.step .cnt small{font-size:12px;color:var(--txt3);font-weight:700}
+
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal .hd{font-size:12px;font-weight:800;text-align:center;color:var(--txt2);padding-bottom:4px}
+.cell{min-height:42px;height:0;padding-bottom:calc(100% - 2px);border:1px solid var(--surf2);
+  border-radius:var(--rs);position:relative;background:var(--surf)}
+.cell .in{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;font-size:11px}
+.cell.pad{border:0;background:none}
+.cell .dd{font-weight:700;color:var(--txt2)}
+.cell .dot{font-size:14px;font-weight:800;line-height:1}
+.cell.s5{background:var(--gold);border-color:var(--gold)}
+.cell.s5 .dd,.cell.s5 .dot{color:var(--goldtxt)}
+.cell.s3{background:var(--goldbg);border-color:var(--gold)}
+.cell.s1{background:var(--surf2)}
+.cell.today{outline:2.5px solid var(--acc);outline-offset:-2px}
+.cyc{display:flex;gap:5px;flex-wrap:wrap}
+.cyc span{width:17px;height:17px;border:var(--bw) solid var(--line);border-radius:var(--rs);background:var(--surf)}
+.cyc span.on{background:var(--gold);border-color:var(--gold)}
+
+.field{display:flex;gap:7px;margin-top:12px;flex-wrap:wrap}
+.field select,.field input{border:var(--bw) solid var(--line);border-radius:var(--rs);
+  background:var(--surf);padding:12px 10px;font-size:16px;min-width:0;-webkit-appearance:none;appearance:none}
+.field select{flex:1 1 100%;background-image:none}
+.field input{flex:1 1 55%}
+.field .go{border:var(--bw) solid var(--acc);border-radius:var(--rs);background:var(--acc);
+  color:var(--acctxt);font-weight:800;padding:12px 20px;font-size:15px;flex:0 0 auto}
+.chips{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.chips button{border:1px solid var(--surf2);border-radius:99px;background:var(--surf2);
+  font-size:13px;font-weight:700;padding:9px 14px}
+.chips button:active{background:var(--gold);color:var(--goldtxt)}
+.memo{border:var(--bw) solid var(--line);border-radius:var(--rs);background:var(--surf);
+  padding:12px 10px;font-size:16px;width:100%;margin-top:8px;-webkit-appearance:none;appearance:none}
+
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:11px 0;
+  border-top:1px solid var(--surf2);font-size:14.5px}
+.row:first-of-type{border-top:0}
+.row .k{font-weight:700;word-break:keep-all}
+.row .v{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row .v.over{color:var(--bad)} .row .v small{font-weight:600;color:var(--txt3)}
+.row.tot{border-top:2px solid var(--txt3);font-size:15.5px}
+
+.flow{width:100%;border-collapse:collapse;font-size:13.5px}
+.flow td{padding:9px 0;border-top:1px solid var(--surf2);vertical-align:baseline}
+.flow tr:first-child td{border-top:0}
+.flow .a{text-align:right;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
+.flow .b{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--txt2);padding-left:10px}
+.flow .minus{color:var(--bad)} .flow .plus{color:var(--acc)}
+.flow tr.key td{background:var(--goldbg);font-weight:800}
+
+.tx{display:flex;justify-content:space-between;gap:10px;font-size:14px;padding:10px 0;
+  border-top:1px dashed var(--txt3)}
+.tx button{border:0;background:none;color:var(--txt3);font-size:20px;padding:0 6px;line-height:1}
+.txlist{max-height:280px;overflow-y:auto;margin-top:10px;-webkit-overflow-scrolling:touch}
+
+.mo{border-top:1px solid var(--surf2);padding:13px 20px;display:flex;gap:11px;align-items:baseline}
+.mo:first-child{border-top:0}
+.mo.cur{background:var(--goldbg)} .mo.past{opacity:.45}
+.mo .m{font-size:13px;font-weight:800;flex:0 0 54px}
+.mo .g{font-size:14px;flex:1;word-break:keep-all}
+.mo .h{font-size:12.5px;font-weight:800;color:var(--txt2);flex:0 0 40px;text-align:right}
+
+.sch{border-top:1px solid var(--surf2);display:flex;gap:12px;padding:10px 0;font-size:14.5px;align-items:baseline}
+.sch:first-child{border-top:0}
+.sch .t{font-weight:800;flex:0 0 86px;font-variant-numeric:tabular-nums;font-size:13.5px;color:var(--txt2)}
+.sch .a{flex:1;word-break:keep-all}
+.sch.on{background:var(--gold);color:var(--goldtxt);margin:0 -10px;padding:10px;
+  border-radius:var(--rs);font-weight:800}
+.sch.on .t{color:var(--goldtxt)}
+.sch.key .a{font-weight:800}
+.sch.past{opacity:.42}
+
+.tabs{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;max-width:620px;margin:0 auto;
+  background:var(--surf);border-top:2px solid var(--line);
+  padding-bottom:env(safe-area-inset-bottom);box-shadow:var(--sh)}
+.tabs button{flex:1;border:0;background:none;padding:15px 2px;font-size:13px;font-weight:800;
+  color:var(--txt2);border-bottom:3px solid transparent}
+.tabs button[aria-selected="true"]{color:var(--acc);border-bottom-color:var(--acc)}
+
+.seg{display:flex;overflow-x:auto;margin-bottom:14px;gap:7px;padding-bottom:2px;
+  -ms-overflow-style:none;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.seg::-webkit-scrollbar{display:none}
+.seg button{flex:0 0 auto;border:var(--bw) solid var(--line);border-radius:99px;background:var(--surf);
+  padding:11px 17px;font-size:14px;font-weight:800;white-space:nowrap}
+.seg button[aria-selected="true"]{background:var(--acc);color:var(--acctxt);border-color:var(--acc)}
+
+.hide{display:none!important}
+.note{font-size:14px;color:var(--txt2);word-break:keep-all;line-height:1.65}
+.note b{color:var(--txt)}
+.warn{background:var(--goldbg);border-left:4px solid var(--gold);border-radius:var(--rs);
+  padding:13px 15px;font-size:14px;word-break:keep-all;line-height:1.6;margin-top:14px}
+.tag{display:inline-block;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:99px;
+  background:var(--surf2);color:var(--txt2)}
+.listy li{font-size:14.5px;margin-bottom:11px;word-break:keep-all;line-height:1.6}
+.qa{border-top:1px solid var(--surf2);padding:15px 0}
+.qa:first-child{border-top:0;padding-top:0}
+.qa .q{font-size:15.5px;font-weight:800;margin-bottom:6px;word-break:keep-all}
+.qa .a{font-size:14.5px;color:var(--txt2);word-break:keep-all;line-height:1.65}
+.qa .a b{color:var(--txt)}
+.stars{font-size:12px;letter-spacing:.08em;color:var(--gold)}
+
+/* 테마 시트 */
+#sheet{position:fixed;inset:0;z-index:100;background:var(--bg);overflow-y:auto;
+  -webkit-overflow-scrolling:touch;padding:0 12px calc(40px + env(safe-area-inset-bottom))}
+#sheet .sheadr{position:sticky;top:0;background:var(--bg);padding:16px 0 14px;display:flex;
+  align-items:center;gap:10px;z-index:2}
+#sheet h2{font-size:20px;font-weight:800;flex:1}
+.tcard{background:var(--surf);border:var(--bw) solid var(--line);border-radius:var(--r);
+  box-shadow:var(--sh);padding:16px;margin-bottom:12px;display:block;width:100%;text-align:left}
+.tcard[aria-current="true"]{border-color:var(--acc);border-width:3px}
+.tcard .tn{font-size:17px;font-weight:800;display:flex;align-items:center;gap:8px}
+.tcard .td{font-size:13.5px;color:var(--txt2);margin-top:4px;word-break:keep-all}
+.sw{display:flex;gap:0;margin-top:13px;border-radius:99px;overflow:hidden;height:34px}
+.sw span{flex:1;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800}
+.pill{font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px;background:var(--acc);color:var(--acctxt)}
+.bkbox{width:100%;min-height:110px;border:var(--bw) solid var(--line);border-radius:var(--rs);
+  background:var(--surf2);color:var(--txt);padding:12px;font-size:12px;font-family:ui-monospace,Menlo,Consolas,monospace;
+  margin-top:12px;-webkit-appearance:none;appearance:none;resize:vertical;line-height:1.4}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btnrow button{border:var(--bw) solid var(--line);border-radius:var(--rs);background:var(--surf);
+  font-weight:800;padding:13px 18px;font-size:14.5px;box-shadow:var(--sh)}
+.btnrow button.pri{background:var(--acc);color:var(--acctxt);border-color:var(--acc)}
+.stepn{display:flex;gap:12px;padding:13px 0;border-top:1px solid var(--surf2);align-items:flex-start}
+.stepn:first-child{border-top:0;padding-top:0}
+.stepn .no{flex:0 0 26px;height:26px;border-radius:99px;background:var(--acc);color:var(--acctxt);
+  display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+.stepn .tx{flex:1;font-size:14.5px;word-break:keep-all;line-height:1.6}
+.stepn .tx b{font-weight:800}
+.ok{background:var(--accbg);color:var(--acc);border-radius:var(--rs);padding:12px 15px;
+  font-size:14px;font-weight:700;word-break:keep-all}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div class="topbar">
+    <span class="d" id="today-label">—</span>
+    <span class="ph" id="phase-label">—</span>
+    <span class="sp"></span>
+    <button class="tgl" id="modeToggle" aria-label="다크 모드 전환"><i id="modeIcon">☀</i></button>
+    <button class="tbtn" id="themeBtn">테마</button>
+  </div>
+
+  <div id="boot" class="panel"><p class="note">불러오는 중…</p></div>
+
+  <div id="t-today" class="hide">
+    <div class="panel hero now">
+      <span class="lbl">지금</span>
+      <div class="act" id="now-act">—</div>
+      <div class="rng" id="now-rng"></div>
+      <div class="nxt" id="now-next"></div>
+    </div>
+    <div class="panel"><div class="cap">오늘 이 세 가지</div><div id="todo-list"></div></div>
+    <div class="panel">
+      <div class="cap">도장 · 5분이라도 했으면 찍는다</div>
+      <div class="stamps" id="stamp-row"></div>
+      <div style="margin-top:18px">
+        <div class="cap" style="margin-bottom:8px">3일 사이클 · 리셋 없음</div>
+        <div class="cyc" id="cycle-row"></div>
+        <p class="note" id="cycle-note" style="margin-top:10px"></p>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="cap">졸업작품</div>
+      <div style="display:flex;align-items:flex-end;gap:14px;margin-bottom:16px">
+        <span class="big" id="dday">—</span><span class="sub" id="dday-sub" style="padding-bottom:4px"></span>
+      </div>
+      <div class="bar"><i id="bar-total" style="width:0%"></i><span class="gh" id="gh-total" style="left:0%"></span></div>
+      <div class="brow"><span id="pct-total">0%</span><span class="r" id="pct-target"></span></div>
+      <p class="note" id="pace-note" style="margin-top:12px"></p>
+    </div>
+    <div class="panel flush">
+      <div class="sec"><div class="cap">오늘 시간표 <span id="sch-type" class="tag"></span></div></div>
+      <div style="padding:0 20px 20px" id="sch-list"></div>
+    </div>
+  </div>
+
+  <div id="t-webtoon" class="hide">
+    <div class="panel"><div class="cap">지금 이 단계</div><div class="cur" id="cur-step"></div></div>
+    <div class="panel">
+      <div class="cap">전체 진도 · 작업량 기준</div>
+      <div style="display:flex;align-items:flex-end;gap:12px;margin-bottom:14px">
+        <span class="big" id="w-pct">0%</span><span class="sub" id="w-hours" style="padding-bottom:4px"></span>
+      </div>
+      <div class="bar"><i id="w-bar" style="width:0%"></i><span class="gh" id="w-gh" style="left:0%"></span></div>
+      <div class="brow"><span id="w-cuts"></span><span class="r" id="w-diff"></span></div>
+      <div class="field">
+        <span style="font-size:14px;font-weight:800;align-self:center;flex:0 0 auto">총 컷 수</span>
+        <input id="w-total" type="number" inputmode="numeric" min="60" max="140" style="flex:0 0 92px">
+        <button class="go" id="w-save-total">저장</button>
+      </div>
+    </div>
+    <div class="panel"><div class="cap">이번 달 목표</div><div id="w-month"></div></div>
+    <div class="panel flush"><div class="sec"><div class="cap">20단계 전체</div></div><div id="w-steps"></div></div>
+    <div class="panel"><div class="cap">누적 목표선 vs 실제</div><div id="w-chart"></div></div>
+  </div>
+
+  <div id="t-practice" class="hide">
+    <div class="panel hero"><div class="cap">오늘의 연습</div><div id="prac-today"></div></div>
+    <div class="panel"><div class="cap">이번 단계 한 주 전체</div><div id="prac-week"></div></div>
+    <div class="panel flush"><div class="sec"><div class="cap">7단계 커리큘럼</div></div><div id="prac-all"></div></div>
+  </div>
+
+  <div id="t-money" class="hide">
+    <div class="panel hero"><div class="cap">일본 여행까지 현금 흐름</div>
+      <table class="flow" id="flow-tbl"></table><div class="warn" id="flow-warn"></div></div>
+    <div class="panel">
+      <div class="cap">통장 잔액</div>
+      <div style="display:flex;align-items:flex-end;gap:12px;margin-bottom:14px">
+        <span class="big" id="sv-amt">—</span><span class="sub" id="sv-sub" style="padding-bottom:4px"></span>
+      </div>
+      <div class="bar"><i id="sv-bar" class="gold" style="width:0%"></i></div>
+      <div class="brow"><span id="sv-l">—</span><span class="r">계획선 대비</span></div>
+      <div class="field"><input id="sv-in" type="number" inputmode="numeric" placeholder="실제 잔액 입력"><button class="go" id="sv-go">저장</button></div>
+    </div>
+    <div class="panel">
+      <div class="cap"><span id="mo-label">—</span> 생활비</div>
+      <div style="display:flex;align-items:flex-end;gap:12px;margin-bottom:14px">
+        <span class="big" id="mo-left">—</span><span class="sub" style="padding-bottom:4px">남음</span>
+      </div>
+      <div class="bar"><i id="mo-bar" style="width:0%"></i></div>
+      <div class="brow"><span id="mo-spent"></span><span class="r" id="mo-budget"></span></div>
+      <div class="field"><select id="ex-cat"></select>
+        <input id="ex-amt" type="number" inputmode="numeric" placeholder="금액"><button class="go" id="ex-go">기록</button></div>
+      <div class="chips" id="amt-chips"></div>
+      <input id="ex-memo" class="memo" placeholder="메모 (선택)">
+      <p class="note" id="mo-hint" style="margin-top:12px"></p>
+    </div>
+    <div class="panel"><div class="cap">카테고리별 한도</div><div id="cat-rows"></div></div>
+    <div class="panel"><div class="cap">이번 달 기록</div><div class="txlist" id="tx-list"></div></div>
+  </div>
+
+  <div id="t-cal" class="hide">
+    <div class="panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+        <button id="cal-prev" class="tbtn" style="height:40px;padding:0 18px;font-size:17px">‹</button>
+        <strong id="cal-title" style="font-size:17px">—</strong>
+        <button id="cal-next" class="tbtn" style="height:40px;padding:0 18px;font-size:17px">›</button>
+      </div>
+      <div class="cal" id="cal-grid"></div>
+      <p class="note" style="margin-top:14px">칸 안 숫자는 그날 찍은 도장 개수야. 빈칸은 판결이 아니라 정보.</p>
+    </div>
+    <div class="panel"><div class="cap">최근 3일</div><div id="last3"></div></div>
+    <div class="panel"><div class="cap">최근 4주 · 작업한 날</div><div id="last4w"></div></div>
+    <div class="panel"><div class="cap">이번 달 합계</div><div id="mo-sum"></div></div>
+  </div>
+
+  <div id="t-plan" class="hide">
+    <div class="seg" id="plan-seg">
+      <button data-p="road" aria-selected="true">로드맵</button>
+      <button data-p="time" aria-selected="false">시간표</button>
+      <button data-p="slump" aria-selected="false">슬럼프</button>
+      <button data-p="fun" aria-selected="false">재미</button>
+      <button data-p="body" aria-selected="false">몸·마음</button>
+      <button data-p="install" aria-selected="false">설치·백업</button>
+    </div>
+    <div id="plan-road"></div><div id="plan-time" class="hide"></div>
+    <div id="plan-slump" class="hide"></div><div id="plan-fun" class="hide"></div>
+    <div id="plan-body" class="hide"></div><div id="plan-install" class="hide"></div>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button data-t="today" aria-selected="true">오늘</button>
+    <button data-t="webtoon" aria-selected="false">웹툰</button>
+    <button data-t="practice" aria-selected="false">연습</button>
+    <button data-t="money" aria-selected="false">돈</button>
+    <button data-t="cal" aria-selected="false">달력</button>
+    <button data-t="plan" aria-selected="false">계획</button>
+  </div>
+
+  <div id="sheet" class="hide">
+    <div class="sheadr"><h2>테마</h2>
+      <button class="tgl" id="modeToggle2" aria-label="다크 모드 전환"><i>☀</i></button>
+      <button class="tbtn" id="sheetClose">닫기</button></div>
+    <p class="note" style="margin-bottom:16px">테마마다 라이트·다크 두 버전이 있어. 위 스위치로 바꾸면 지금 테마가 그대로 반전돼.</p>
+    <div id="theme-list"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ══════ 저장소: Claude 아티팩트 → 로컬 파일 → 메모리 순으로 폴백 ══════ */
+var STORE=(function(){
+  var mem={},hasW=false,hasL=false;
+  try{ hasW=(window.storage&&typeof window.storage.get==="function"); }catch(e){}
+  try{ window.localStorage.setItem("__t","1"); window.localStorage.removeItem("__t"); hasL=true; }catch(e){}
+  return{
+    mode:hasW?"claude":(hasL?"local":"memory"),
+    get:function(k){
+      if(hasW){ return window.storage.get(k).then(function(r){return r?r.value:null}).catch(function(){return null}); }
+      if(hasL){ try{ return Promise.resolve(window.localStorage.getItem(k)); }catch(e){} }
+      return Promise.resolve(mem[k]||null);
+    },
+    set:function(k,v){
+      if(hasW){ return window.storage.set(k,v).catch(function(){}); }
+      if(hasL){ try{ window.localStorage.setItem(k,v); }catch(e){} return Promise.resolve(); }
+      mem[k]=v; return Promise.resolve();
+    }
+  };
+})();
+
+/* ══════ 테마 8종 ══════ */
+var THEMES=[
+{id:"ink",nm:"먹지",desc:"웹툰 원고지. 흰 종이에 검은 펜선, 각진 모서리. 지금 쓰던 그 화면.",
+ s:{"--r":"0px","--rs":"0px","--bw":"1.5px","--sh":"none","--hero":"3px"},
+ light:{"--bg":"#e9eae4","--surf":"#ffffff","--surf2":"#f2f3ee","--txt":"#000000","--txt2":"#5f5f58","--txt3":"#a3a39a","--line":"#000000","--acc":"#5b2bc9","--accbg":"#efe9fc","--acctxt":"#ffffff","--gold":"#e0a020","--goldbg":"#fdf1d8","--goldtxt":"#1a1200","--bad":"#c0392b"},
+ dark:{"--bg":"#16171a","--surf":"#202127","--surf2":"#2b2c33","--txt":"#f2f1ec","--txt2":"#a8a79f","--txt3":"#6e6d66","--line":"#f2f1ec","--acc":"#a78bfa","--accbg":"#2e2545","--acctxt":"#16171a","--gold":"#f0bc5c","--goldbg":"#3a2e17","--goldtxt":"#16171a","--bad":"#f0705f"}},
+
+{id:"apricot",desc:"오트밀과 머스크 클레이. 2026년 소프트 뉴트럴, 넉넉한 라운드와 얕은 그림자.",nm:"살구",
+ s:{"--r":"20px","--rs":"14px","--bw":"0px","--sh":"0 2px 16px rgba(90,65,45,.08)","--hero":"0px"},
+ light:{"--bg":"#f3ede6","--surf":"#fcfaf7","--surf2":"#efe6dc","--txt":"#33291f","--txt2":"#7a6a5c","--txt3":"#b3a395","--line":"transparent","--acc":"#c4664a","--accbg":"#f7e6de","--acctxt":"#fff8f4","--gold":"#cf9327","--goldbg":"#faeed4","--goldtxt":"#2b1f08","--bad":"#b3453a"},
+ dark:{"--bg":"#1c1815","--surf":"#272119","--surf2":"#342d24","--txt":"#f2e9df","--txt2":"#b0a091","--txt3":"#776a5d","--line":"transparent","--acc":"#e08a6c","--accbg":"#3d2820","--acctxt":"#1c1815","--gold":"#e8b45e","--goldbg":"#3b2e17","--goldtxt":"#1c1815","--bad":"#e5776a"}},
+
+{id:"gacha",nm:"가챠",desc:"게임 뽑기 화면. SR 퍼플과 SSR 골드, 아래로 떨어지는 두꺼운 그림자.",
+ s:{"--r":"14px","--rs":"10px","--bw":"1.5px","--sh":"0 3px 0 rgba(109,40,217,.18)","--hero":"2.5px"},
+ light:{"--bg":"#eeeafb","--surf":"#ffffff","--surf2":"#f2eefc","--txt":"#1e1633","--txt2":"#5f5480","--txt3":"#a79bc4","--line":"#ddd3f5","--acc":"#6d28d9","--accbg":"#ece2fe","--acctxt":"#ffffff","--gold":"#e8a317","--goldbg":"#fdf0d0","--goldtxt":"#2a1c00","--bad":"#dc2657"},
+ dark:{"--bg":"#120e1f","--surf":"#1d1731","--surf2":"#29204a","--txt":"#ede8fa","--txt2":"#a99bd1","--txt3":"#6e6191","--line":"#382c60","--acc":"#a78bfa","--accbg":"#2e2352","--acctxt":"#120e1f","--gold":"#ffc93f","--goldbg":"#3d2e0c","--goldtxt":"#120e1f","--bad":"#ff5c8a"}},
+
+{id:"matcha",nm:"말차",desc:"세이지 그린과 크림. 자극이 적어서 오래 봐도 눈이 편한 조합.",
+ s:{"--r":"16px","--rs":"11px","--bw":"1px","--sh":"0 1px 10px rgba(60,80,50,.07)","--hero":"2px"},
+ light:{"--bg":"#edefe4","--surf":"#fbfcf5","--surf2":"#e5e9d8","--txt":"#2a3123","--txt2":"#64705a","--txt3":"#9ba68f","--line":"#d4dac5","--acc":"#4e7c4a","--accbg":"#dfebda","--acctxt":"#fbfcf5","--gold":"#b8842f","--goldbg":"#f3e7cb","--goldtxt":"#241a05","--bad":"#a94a3c"},
+ dark:{"--bg":"#151a12","--surf":"#1e2419","--surf2":"#2a3123","--txt":"#e7eddd","--txt2":"#a2af95","--txt3":"#6c7a61","--line":"#333d2b","--acc":"#86c07e","--accbg":"#24331f","--acctxt":"#151a12","--gold":"#dfae5c","--goldbg":"#362b14","--goldtxt":"#151a12","--bad":"#e07a68"}},
+
+{id:"midnight",nm:"미드나잇",desc:"새벽 작업실. 깊은 인디고에 민트 한 줄기, 차분하고 집중되는 화면.",
+ s:{"--r":"18px","--rs":"12px","--bw":"1px","--sh":"0 2px 14px rgba(20,35,80,.09)","--hero":"2px"},
+ light:{"--bg":"#e8ecf5","--surf":"#ffffff","--surf2":"#edf1f9","--txt":"#16203a","--txt2":"#5a6685","--txt3":"#96a0bd","--line":"#d5dcec","--acc":"#2c4a8a","--accbg":"#dde6f8","--acctxt":"#ffffff","--gold":"#1a8f7a","--goldbg":"#d5efe8","--goldtxt":"#04241d","--bad":"#c0453f"},
+ dark:{"--bg":"#0d1220","--surf":"#161d30","--surf2":"#202942","--txt":"#e6ecfa","--txt2":"#93a0c0","--txt3":"#5f6b8a","--line":"#29334f","--acc":"#7aa5ff","--accbg":"#1a2647","--acctxt":"#0d1220","--gold":"#6fe3c4","--goldbg":"#123a32","--goldtxt":"#04231c","--bad":"#ff7b72"}},
+
+{id:"jelly",nm:"젤리",desc:"파스텔 캔디. 통통한 라운드와 아래로 눌리는 버튼, 만지고 싶어지는 촉감.",
+ s:{"--r":"26px","--rs":"18px","--bw":"0px","--sh":"0 4px 0 rgba(139,92,246,.16)","--hero":"0px"},
+ light:{"--bg":"#f6f1fb","--surf":"#ffffff","--surf2":"#f0e8fb","--txt":"#3b2f52","--txt2":"#7e6e99","--txt3":"#b6aacb","--line":"transparent","--acc":"#8b5cf6","--accbg":"#ede4ff","--acctxt":"#ffffff","--gold":"#f78f2e","--goldbg":"#ffe9d4","--goldtxt":"#331700","--bad":"#f2557a"},
+ dark:{"--bg":"#191426","--surf":"#241d36","--surf2":"#302748","--txt":"#efe8fa","--txt2":"#b4a6ce","--txt3":"#7c6e96","--line":"transparent","--acc":"#b191ff","--accbg":"#332656","--acctxt":"#191426","--gold":"#ffb35c","--goldbg":"#3e2c15","--goldtxt":"#191426","--bad":"#ff8fa8"}},
+
+{id:"riso",nm:"리소",desc:"리소그래프 인쇄. 형광 핑크와 두꺼운 검은 테두리, 종이에 찍힌 것 같은 오프셋 그림자.",
+ s:{"--r":"4px","--rs":"3px","--bw":"2px","--sh":"3px 3px 0 rgba(31,27,22,.9)","--hero":"3px"},
+ light:{"--bg":"#f4f0e4","--surf":"#fffdf6","--surf2":"#ece5d3","--txt":"#1f1b16","--txt2":"#6b6252","--txt3":"#a99e88","--line":"#1f1b16","--acc":"#e8336d","--accbg":"#fbdce6","--acctxt":"#fffdf6","--gold":"#eeae00","--goldbg":"#fbecbc","--goldtxt":"#24190a","--bad":"#d62828"},
+ dark:{"--bg":"#17161c","--surf":"#201f27","--surf2":"#2c2b35","--txt":"#f2efe4","--txt2":"#aba697","--txt3":"#6f6b5f","--line":"#f2efe4","--acc":"#ff5c8f","--accbg":"#3b1b2a","--acctxt":"#17161c","--gold":"#ffce3b","--goldbg":"#3a2e0b","--goldtxt":"#17161c","--bad":"#ff6b5c"}},
+
+{id:"quiet",nm:"고요",desc:"스톤 그레이 하나와 흐린 청회색 액센트. 색을 거의 안 써서 진도 숫자만 남는다.",
+ s:{"--r":"12px","--rs":"9px","--bw":"1px","--sh":"none","--hero":"1px"},
+ light:{"--bg":"#f4f4f2","--surf":"#ffffff","--surf2":"#eeeeeb","--txt":"#1a1a19","--txt2":"#6e6e6b","--txt3":"#a6a6a2","--line":"#e2e2df","--acc":"#4e6275","--accbg":"#e6ecf1","--acctxt":"#ffffff","--gold":"#8d7c4c","--goldbg":"#efe9d9","--goldtxt":"#ffffff","--bad":"#97413a"},
+ dark:{"--bg":"#131313","--surf":"#1c1c1c","--surf2":"#262626","--txt":"#edede9","--txt2":"#9a9a96","--txt3":"#656562","--line":"#2f2f2e","--acc":"#9bb0c4","--accbg":"#222b33","--acctxt":"#131313","--gold":"#c7b27c","--goldbg":"#2e2818","--goldtxt":"#131313","--bad":"#d4796f"}}
+];
+
+/* ══════ 데이터 ══════ */
+var STEPS=[["글 콘티",4],["1차 러프 (그림 콘티)",6],["2차 러프",8],["3차 러프",10],["콘티 캐릭터 그리기",12],
+["콘티 배경 그리기",12],["캐릭터 선따기",25],["배경 선따기",25],["캐릭터 밑색",10],["배경 밑색",10],
+["캐릭터 명암",15],["배경 명암",15],["캐릭터 디테일",18],["배경 디테일",18],["후보정",6],["효과 (집중선)",5],
+["효과음",5],["말풍선",4],["대사 입력",4],["최종 점검",3]].map(function(x){return{n:x[0],m:x[1]}});
+
+var MONTHS=[["2026-09","재활기",0,"매일 펜 잡기 · 생활 리듬 · 항공권 예약"],
+["2026-10","기획기",30,"시나리오 · 캐릭터 설정 · 90컷 분할 확정"],
+["2026-11","착수+여행",15,"글 콘티 완료 · 1차 러프 완료 / 일본 여행"],
+["2026-12","러프",30,"2차 러프 · 3차 러프 완료"],
+["2027-01","콘티",32,"콘티 캐릭터 완료 · 콘티 배경 착수"],
+["2027-02","선따기",30,"콘티 배경 완료 · 캐릭터 선따기 착수"],
+["2027-03","선따기",35,"캐릭터 선따기 완료 · 배경 선따기 착수"],
+["2027-04","선따기·채색",34,"배경 선따기 완료 · 밑색 착수"],
+["2027-05","채색",35,"밑색 완료 · 캐릭터 명암"],
+["2027-06","채색",33,"배경 명암 완료 · 캐릭터 디테일 착수"],
+["2027-07","디테일",33,"캐릭터 디테일 완료 · 배경 디테일"],
+["2027-08","디테일·마감",26,"배경 디테일 완료 · 후보정 · 효과"],
+["2027-09","마감",19.5,"효과음 · 말풍선 · 대사 · 최종 점검 → 완성"],
+["2027-10","버퍼",10,"밀린 분량 처리 · 전체 리터치"],
+["2027-11","버퍼",8,"제출용 파일 정리 · 포트폴리오화"],
+["2027-12","제출",3,"12월 10일 최종 제출"]].map(function(x){return{m:x[0],ph:x[1],h:x[2],g:x[3]}});
+
+var CURR=[
+{id:"P0",from:"2026-09-08",to:"2026-09-30",nm:"0단계 · 손 되살리기",lv:1,min:10,
+ why:"오래 안 그린 손을 되돌리는 구간. 실력이 아니라 습관을 만드는 게 목적이야. 10분 넘기지 마.",
+ days:["휴식","선 긋기 — 직선·곡선·원 각 20개 (5분) + 아무 낙서 (5분)","30초 제스처 드로잉 5장",
+ "선 긋기 + 좋아하는 게임 캐릭터 얼굴 낙서","30초 제스처 드로잉 5장",
+ "자료 수집 — 좋아하는 그림 10장 저장하고 '왜 좋은지' 한 줄씩","자유 낙서 · 팬아트. 완성 안 해도 됨"]},
+{id:"P1",from:"2026-10-01",to:"2026-10-31",nm:"1단계 · 연출과 캐릭터",lv:2,min:20,
+ why:"이번 달은 시나리오와 컷 분할이야. 잘 그리는 것보다 '어떻게 보여줄지'가 실력인 구간.",
+ days:["휴식","1분 제스처 드로잉 5장","컷 연출 분석 — 좋아하는 웹툰 1화의 컷 크기·시선 흐름·여백을 그대로 베껴 그리기",
+ "표정 연습 — 내 캐릭터 얼굴 6종 (기쁨·슬픔·분노·놀람·무표정·미묘한 감정)","컷 연출 분석 2 — 다른 작가 걸로",
+ "자료 수집 — 작품 배경이 될 장소 사진 20장, 의상 자료 10장","캐릭터 3면도 또는 자유 팬아트"]},
+{id:"P2",from:"2026-11-01",to:"2027-01-31",nm:"2단계 · 인체와 구도",lv:3,min:20,
+ why:"러프·콘티 구간. 여기서 형태가 틀리면 선따기·채색에서 전부 다시 해야 해. 지금 잡는 게 제일 싸다.",
+ days:["휴식","1분 제스처 드로잉 8장","인체 비율 — 7~8등신 골격 간략화 3장","손 연습 3장 — 내 손 보고 그리기",
+ "인체 각도 — 같은 포즈를 정면·측면·3/4로 3장","자료 수집 + 옷 주름 관찰 스케치 3장","자유 팬아트 — 전신 1장 도전"]},
+{id:"P3",from:"2027-02-01",to:"2027-04-30",nm:"3단계 · 투시와 선",lv:4,min:25,
+ why:"콘티 배경과 선따기 구간. 322시간 중 75시간이 선따기야. 선의 질과 속도가 완성도의 절반.",
+ days:["휴식","필압 훈련 — 한 선 안에서 굵기 변화 주기 20줄","1·2점 투시 — 큐브 배치 + 간단한 방 1장",
+ "선따기 속도 훈련 — 러프 1장을 25분 안에, 걸린 시간 기록","배경 요소 — 창문·계단·가구 중 3개를 투시에 맞춰",
+ "자료 수집 — 실제 장소 사진 위에 투시선 그어보기","자유 팬아트 — 배경 있는 그림 1장"]},
+{id:"P4",from:"2027-05-01",to:"2027-07-15",nm:"4단계 · 명암과 색",lv:4,min:25,
+ why:"밑색·명암 구간. 색은 감이 아니라 규칙이야. 규칙을 알면 고민 시간이 절반으로 줄어.",
+ days:["휴식","3톤 명암 — 구·원기둥·박스에 광원 정하고 명암 3단계","색감 스터디 — 좋아하는 영화 스크린샷에서 색 5개 뽑아 팔레트로 저장",
+ "캐릭터 명암 — 얼굴 1장에 광원 방향 3가지로","배색 연습 — 같은 그림을 따뜻한 색조 / 차가운 색조 2번",
+ "자료 수집 — 아침·낮·노을·밤 조명 레퍼런스 20장","자유 채색 팬아트 1장"]},
+{id:"P5",from:"2027-07-16",to:"2027-09-30",nm:"5단계 · 재질·후보정·효과",lv:5,min:25,
+ why:"디테일과 마감 구간. 보는 사람이 '완성됐다'고 느끼는 건 마지막 20%에서 결정돼.",
+ days:["휴식","재질 표현 — 피부·천·금속·유리·머리카락 중 하나 골라 3장","후보정 — 완성 그림에 톤커브·컬러밸런스·글로우, 전후 비교 저장",
+ "효과 — 집중선·속도선·파티클 각 5개","재질 표현 2 — 다른 재질로",
+ "식자 연습 — 말풍선 배치·폰트·자간. 좋아하는 웹툰 식자 따라해보기","자유 — 완성작 1장, SNS 업로드용"]},
+{id:"P6",from:"2027-10-01",to:"2027-12-10",nm:"6단계 · 포트폴리오와 다음",lv:3,min:20,
+ why:"작품은 거의 끝났어. 이제 1년간 는 실력을 정리하고 다음 걸 준비하는 시간.",
+ days:["휴식","자유 드로잉 — 하고 싶은 거","포트폴리오 정리 — 1년간 그린 것 중 베스트 고르기","자유 드로잉",
+ "다음 작품 아이디어 낙서","자료 정리 — 레퍼런스 폴더, 브러시 세팅","자유 팬아트"]}];
+
+var SCHED={
+A:{nm:"A형 · 재활기",rows:[["08:30","기상 · 물 한 잔 · 커튼 열기"],["08:40","세수 · 양치 · 스트레칭 5분"],
+["09:00","아침 식사"],["09:30","햇빛 산책 20분",1],["10:00","자유 시간 · SNS"],["10:40","오늘의 연습 10분",1],
+["10:50","게임 ① ②"],["11:50","휴식"],["12:10","점심 · 양치"],["13:00","자유 시간"],["14:00","낮잠 25분 · 알람 필수"],
+["14:30","방 정리 20분"],["15:00","게임 ③ ④ ⑤"],["16:00","자유 시간"],["17:30","산책 또는 홈트 20분"],
+["18:00","자유 시간"],["18:30","저녁 · 양치"],["19:30","자유 시간 · 게임 잔여"],["21:00","샤워"],
+["21:30","기록 5분 · 가계부 · 도장",1],["21:40","자유 시간"],["23:00","화면 끄기 · 스트레칭"],
+["23:30","책 · 음악"],["24:00","취침"]]},
+B:{nm:"B형 · 기획·초반 작업기",rows:[["08:30","기상 · 물 한 잔 · 커튼 열기"],["08:40","세수 · 양치 · 스트레칭"],
+["09:00","아침 식사"],["09:30","햇빛 산책 20~30분",1],["10:00","책상 세팅 · 웜업 낙서 3분"],
+["10:05","웹툰 작업 1블록 25분",1],["10:30","휴식 5분"],["10:35","웹툰 작업 2블록 25분",1],
+["11:00","오늘의 연습 20분",1],["11:20","자유 시간 · SNS"],["12:10","점심 · 양치"],["13:00","게임 60분 · 타이머"],
+["14:00","낮잠 25분"],["14:30","자유 시간 · 외출"],["15:30","예비 블록 25분 · 밀렸을 때만",1],
+["16:00","자유 시간"],["17:30","산책 또는 홈트 20분"],["18:30","저녁 · 양치"],["19:30","게임 잔여 · 자유 시간"],
+["21:00","샤워"],["21:30","기록 5분 · 가계부 · 도장 · 내일 첫 블록 한 줄",1],["21:40","자유 시간"],
+["23:00","화면 끄기 · 스트레칭"],["23:30","책 · 음악"],["24:00","취침"]]},
+C:{nm:"C형 · 본작업기",rows:[["08:20","기상 · 물 한 잔 · 커튼 열기"],["08:30","세수 · 양치 · 스트레칭"],
+["08:50","아침 식사"],["09:20","햇빛 산책 20~30분",1],["09:50","책상 세팅 · 웜업 낙서 3분"],
+["10:00","웹툰 작업 1블록 25분",1],["10:25","휴식 5분"],["10:30","웹툰 작업 2블록 25분",1],["10:55","휴식 5분"],
+["11:00","웹툰 작업 3블록 25분",1],["11:25","손목 · 어깨 스트레칭 5분"],["11:30","자유 시간 · SNS"],
+["12:10","점심 · 양치"],["13:00","게임 60분 · 타이머"],["14:00","낮잠 25분"],["14:30","오늘의 연습 25분",1],
+["14:55","자유 시간 · 외출"],["16:00","예비 블록 25분 · 밀렸을 때만",1],["16:30","자유 시간"],
+["17:30","산책 또는 홈트 20분"],["18:30","저녁 · 양치"],["19:30","게임 잔여 · 자유 시간"],["21:00","샤워"],
+["21:30","기록 5분",1],["21:40","자유 시간"],["23:00","화면 끄기 · 스트레칭"],["23:30","책 · 음악"],["24:00","취침"]]},
+D:{nm:"D형 · 마무리·버퍼기",rows:[["08:30","기상 · 물 한 잔 · 커튼 열기"],["08:40","세수 · 양치 · 스트레칭"],
+["09:00","아침 식사"],["09:30","햇빛 산책 20~30분",1],["10:00","웹툰 작업 1블록 25분 · 밀린 것 · 리터치",1],
+["10:25","휴식"],["10:40","오늘의 연습 20분",1],["11:00","자유 시간 · SNS"],["12:10","점심 · 양치"],
+["13:00","게임 60분"],["14:00","낮잠 25분"],["14:30","자유 시간 · 외출 · 포트폴리오 정리"],
+["17:30","산책 또는 홈트 20분"],["18:30","저녁 · 양치"],["19:30","자유 시간"],["21:00","샤워"],
+["21:30","기록 5분",1],["21:40","자유 시간"],["23:00","화면 끄기"],["24:00","취침"]]},
+E:{nm:"E형 · 휴식일 (일요일)",rows:[["09:30","늦잠 허용 · 물 · 커튼 열기"],["10:00","세수 · 양치"],
+["10:30","아침 겸 점심"],["11:30","산책 30분 또는 외출"],["13:00","하고 싶은 것 · 게임 · 웹툰 · 영화 · 친구"],
+["18:30","저녁 식사"],["20:00","다음 주 계획 10분 · 도장 확인 · 다음 주 한 줄",1],["21:00","샤워"],
+["22:00","자유 시간"],["23:30","화면 끄기"],["24:30","취침"]]}};
+
+var STAMPS=[{id:"work",mk:"作",nm:"작업"},{id:"prac",mk:"練",nm:"연습"},{id:"walk",mk:"步",nm:"산책"},
+{id:"money",mk:"記",nm:"기록"},{id:"sleep",mk:"眠",nm:"수면"}];
+
+var B_SEP={"식비·간식":80000,"카페·외식":20000,"구독(OTT)":10000,"게임 과금":10000,"교통":20000,"생필품·미용":30000,"예비":10000};
+var B_TRIP={"식비·간식":90000,"카페·외식":25000,"구독(OTT)":10000,"게임 과금":20000,"교통":25000,"생필품·미용":20000,"그림 자료·재료":10000};
+var B_NORM={"비상금 저축":50000,"졸업작품 자금":40000,"게임 과금":70000,"식비·간식":140000,"카페·외식":60000,
+"구독(OTT)":20000,"교통":40000,"생필품·미용":60000,"건강":40000,"보상비":40000,"예비":40000};
+function budgetFor(ym){ return ym==="2026-09"?B_SEP:(ym<="2026-11"?B_TRIP:B_NORM); }
+
+var FLOW=[["9/8 현재 잔액",null,666334,1],["9월 중 항공권 결제",-350000,316334,1],["9/8~9/30 생활비",-180000,136334,0],
+["10/1 용돈",600000,736334,0],["10월 중 숙소 예약 · 분담",-180000,556334,1],["10월 생활비",-200000,356334,0],
+["11/1 용돈",600000,956334,0],["여행 전 생활비",-80000,876334,0],["일본 현지 예산",-670000,206334,1],
+["11월 남은 생활비",-100000,106334,0],["12/1 용돈",600000,706334,1]];
+var PLAN_BAL={"2026-09":136334,"2026-10":356334,"2026-11":106334};
+var DUE="2027-12-10",DONE_BY="2027-09-30";
+
+/* ══════ 유틸 ══════ */
+function $(s){return document.querySelector(s)}
+function iso(d){var t=new Date(d);t.setMinutes(t.getMinutes()-t.getTimezoneOffset());return t.toISOString().slice(0,10)}
+function won(n){n=n||0;return (n<0?"-":"")+Math.abs(n).toLocaleString("ko-KR")+"원"}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function dbtw(a,b){return Math.round((new Date(b)-new Date(a))/864e5)}
+var TODAY=iso(new Date()),YM=TODAY.slice(0,7),DOW=["일","월","화","수","목","금","토"];
+function h12(t){var p=t.split(":"),h=+p[0],mm=p[1];
+  if(h>=24||h===0)return "밤 12:"+mm; if(h===12)return "오후 12:"+mm;
+  return (h<12?"오전 ":"오후 ")+(h%12)+":"+mm;}
+function toMin(t){var p=t.split(":");return (+p[0])*60+(+p[1])}
+
+/* ══════ 상태 ══════ */
+var core={totalCuts:90,steps:{},savings:666334,money:{}};
+var stamps={},prefs={theme:"ink",mode:"light"};
+var tab="today",calYM=YM,seg="road";
+var KC="wtplan-core-v3",KS="wtplan-stamps-v3",KP="wtplan-prefs-v3";
+
+function load(){
+  return Promise.all([STORE.get(KC),STORE.get(KS),STORE.get(KP)]).then(function(r){
+    try{ if(r[0]){var c=JSON.parse(r[0]);for(var k in c)core[k]=c[k];} }catch(e){}
+    try{ if(r[1]) stamps=JSON.parse(r[1]); }catch(e){}
+    try{ if(r[2]){var p=JSON.parse(r[2]);for(var k2 in p)prefs[k2]=p[k2];} }catch(e){}
+  });
+}
+var tc=null,ts=null,tp=null;
+function saveCore(){clearTimeout(tc);tc=setTimeout(function(){STORE.set(KC,JSON.stringify(core))},350)}
+function saveStamps(){clearTimeout(ts);ts=setTimeout(function(){STORE.set(KS,JSON.stringify(stamps))},350)}
+function savePrefs(){clearTimeout(tp);tp=setTimeout(function(){STORE.set(KP,JSON.stringify(prefs))},200)}
+
+/* ══════ 테마 적용 ══════ */
+function themeById(id){for(var i=0;i<THEMES.length;i++)if(THEMES[i].id===id)return THEMES[i];return THEMES[0]}
+function applyTheme(){
+  var t=themeById(prefs.theme),v=t[prefs.mode],w=$("#wrap"),k;
+  for(k in v) w.style.setProperty(k,v[k]);
+  for(k in t.s) w.style.setProperty(k,t.s[k]);
+  w.setAttribute("data-mode",prefs.mode);
+  document.documentElement.style.background=v["--bg"];
+  document.body.style.background=v["--bg"];
+  var mc=document.querySelector('meta[name="theme-color"]');
+  if(!mc){mc=document.createElement("meta");mc.name="theme-color";document.head.appendChild(mc)}
+  mc.content=v["--bg"];
+  $("#modeIcon").textContent=prefs.mode==="dark"?"☾":"☀";
+  var i2=$("#modeToggle2").querySelector("i"); if(i2) i2.textContent=prefs.mode==="dark"?"☾":"☀";
+  $("#themeBtn").textContent=t.nm;
+}
+function renderThemeList(){
+  $("#theme-list").innerHTML=THEMES.map(function(t){
+    var v=t[prefs.mode];
+    return '<button class="tcard" data-th="'+t.id+'" aria-current="'+(t.id===prefs.theme)+'"'+
+      ' style="background:'+v["--surf"]+';color:'+v["--txt"]+';border-color:'+(t.id===prefs.theme?v["--acc"]:(v["--line"]==="transparent"?v["--surf2"]:v["--line"]))+'">'+
+      '<span class="tn" style="color:'+v["--txt"]+'">'+esc(t.nm)+
+      (t.id===prefs.theme?' <span class="pill" style="background:'+v["--acc"]+';color:'+v["--acctxt"]+'">사용 중</span>':'')+'</span>'+
+      '<div class="td" style="color:'+v["--txt2"]+'">'+esc(t.desc)+'</div>'+
+      '<div class="sw" style="border-radius:'+t.s["--rs"]+'">'+
+        '<span style="background:'+v["--bg"]+';color:'+v["--txt2"]+'">배경</span>'+
+        '<span style="background:'+v["--acc"]+';color:'+v["--acctxt"]+'">강조</span>'+
+        '<span style="background:'+v["--gold"]+';color:'+v["--goldtxt"]+'">도장</span>'+
+        '<span style="background:'+v["--surf2"]+';color:'+v["--txt2"]+'">면</span>'+
+        '<span style="background:'+v["--txt"]+';color:'+v["--surf"]+'">글자</span>'+
+      '</div></button>';
+  }).join("");
+}
+
+/* ══════ 계산 ══════ */
+var perCut=STEPS.reduce(function(s,x){return s+x.m},0);
+function totalMin(){return perCut*core.totalCuts}
+function doneMin(){return STEPS.reduce(function(s,x,i){return s+(core.steps[i]||0)*x.m},0)}
+function targetMin(){
+  var cum=0,scale=core.totalCuts/90;
+  for(var i=0;i<MONTHS.length;i++){var mo=MONTHS[i];
+    if(mo.m==="2026-09"||mo.m==="2026-10")continue;
+    var p=mo.m.split("-"),last=new Date(+p[0],+p[1],0).getDate(),mm=mo.h*60*scale;
+    if(YM>mo.m){cum+=mm;continue}
+    if(YM===mo.m){cum+=mm*(+TODAY.slice(8)/last)}
+    break;}
+  return cum;
+}
+function curStepIdx(){for(var i=0;i<STEPS.length;i++)if((core.steps[i]||0)<core.totalCuts)return i;return 19}
+function phaseOf(d){return d<"2026-10-01"?{k:"A",nm:"재활기"}:d<"2027-03-01"?{k:"B",nm:"기획·초반"}
+  :d<"2027-10-01"?{k:"C",nm:"본작업기"}:{k:"D",nm:"마무리·버퍼"}}
+function currOf(d){for(var i=0;i<CURR.length;i++)if(d>=CURR[i].from&&d<=CURR[i].to)return CURR[i];return CURR[CURR.length-1]}
+function schedKey(){return new Date(TODAY).getDay()===0?"E":phaseOf(TODAY).k}
+function todayCutGoal(){
+  var mo=null;for(var i=0;i<MONTHS.length;i++)if(MONTHS[i].m===YM)mo=MONTHS[i];
+  if(!mo||!mo.h)return null;
+  var p=YM.split("-"),last=new Date(+p[0],+p[1],0).getDate();
+  var per=mo.h*60/last*(core.totalCuts/90),st=STEPS[curStepIdx()];
+  return{name:st.n,cuts:Math.max(1,Math.round(per/st.m)),mins:Math.round(per)};
+}
+function moData(ym){ if(!core.money[ym])core.money[ym]={tx:[]}; return core.money[ym]; }
+function todayStamps(){return stamps[TODAY]||[]}
+
+/* ══════ 렌더 ══════ */
+function rTop(){var d=new Date(TODAY);
+  $("#today-label").textContent=(d.getMonth()+1)+"월 "+d.getDate()+"일 ("+DOW[d.getDay()]+")";
+  $("#phase-label").textContent=d.getDay()===0?"휴식일":phaseOf(TODAY).nm;}
+
+function rNow(){
+  var S=SCHED[schedKey()],n=new Date(),mins=n.getHours()*60+n.getMinutes(),i=-1;
+  S.rows.forEach(function(r,k){if(mins>=toMin(r[0]))i=k});
+  if(i<0){$("#now-act").textContent="자는 중";$("#now-rng").textContent="— "+h12(S.rows[0][0]);
+    $("#now-next").textContent="다음 · "+S.rows[0][1];}
+  else{var c=S.rows[i],x=S.rows[i+1];
+    $("#now-act").textContent=c[1].split(" · ")[0];
+    $("#now-rng").textContent=h12(c[0])+(x?" – "+h12(x[0]):"");
+    $("#now-next").textContent=x?"다음 "+h12(x[0])+" · "+x[1]:"오늘 끝. 잘했어.";}
+  $("#sch-type").textContent=S.nm;
+  $("#sch-list").innerHTML=S.rows.map(function(r,k){
+    return '<div class="sch '+(k===i?"on":"")+' '+(k<i?"past":"")+' '+(r[2]?"key":"")+'">'+
+      '<span class="t">'+h12(r[0])+'</span><span class="a">'+esc(r[1])+'</span></div>'}).join("");
+}
+
+function rTodo(){
+  var g=todayCutGoal(),c=currOf(TODAY),dow=new Date(TODAY).getDay(),it=[];
+  it.push(["作","웹툰",g?g.name+" — 오늘 "+g.cuts+"컷 (약 "+g.mins+"분)":"이번 달은 작업 배정이 없어. 쉬어."]);
+  it.push(["練","연습 · "+c.nm.split(" · ")[1],dow===0?"오늘은 휴식":c.days[dow]]);
+  it.push(["步","몸","햇빛 산책 20분 · 25분마다 손목 스트레칭"]);
+  $("#todo-list").innerHTML=it.map(function(t){
+    return '<div class="todo"><span class="ic">'+t[0]+'</span><span style="flex:1;min-width:0">'+
+      '<span class="h" style="display:block">'+esc(t[1])+'</span>'+
+      '<span class="b" style="display:block">'+esc(t[2])+'</span></span></div>'}).join("");
+}
+
+function rStamps(){
+  var cur=todayStamps();
+  $("#stamp-row").innerHTML=STAMPS.map(function(s){
+    return '<button class="stamp" data-s="'+s.id+'" aria-pressed="'+(cur.indexOf(s.id)>=0)+'">'+
+      '<span class="mk">'+s.mk+'</span><span class="nm">'+s.nm+'</span></button>'}).join("");
+  var tw=0,k; for(k in stamps) if(stamps[k].indexOf("work")>=0) tw++;
+  var cy=Math.floor(tw/3),inc=tw%3,n=Math.max(12,cy+1),h="";
+  for(var i=0;i<n;i++) h+='<span class="'+(i<cy?"on":"")+'"></span>';
+  $("#cycle-row").innerHTML=h;
+  $("#cycle-note").innerHTML="작업 도장 <b>"+tw+"개</b> · 사이클 <b>"+cy+"개</b> 완성 · 다음까지 <b>"+(3-inc)+"일</b><br>한 번 빠져도 사이클은 사라지지 않아.";
+}
+
+function rDday(){
+  $("#dday").textContent="D-"+Math.max(0,dbtw(TODAY,DUE));
+  $("#dday-sub").innerHTML="제출 2027.12.10<br>완성 목표까지 "+Math.max(0,dbtw(TODAY,DONE_BY))+"일";
+  var dm=doneMin(),tm=totalMin(),gm=targetMin();
+  var p=tm?dm/tm*100:0,g=tm?Math.min(100,gm/tm*100):0,b=$("#bar-total");
+  b.style.width=p.toFixed(1)+"%"; b.className=p>=g?"gold":(p<g-8?"bad":"");
+  $("#gh-total").style.left=g.toFixed(1)+"%";
+  $("#pct-total").textContent=p.toFixed(1)+"%";
+  $("#pct-target").textContent="목표선 "+g.toFixed(1)+"%";
+  var rem=(tm-dm)/60,days=Math.max(1,dbtw(TODAY,DONE_BY));
+  $("#pace-note").innerHTML="남은 작업 <b>"+rem.toFixed(0)+"시간</b> · 2027년 9월 30일까지 하루 <b>"+
+    (rem/days*60).toFixed(0)+"분</b>이면 끝나. "+(p>=g?"목표선보다 앞서 있어.":"밀려도 10~12월이 통째로 버퍼야.");
+}
+
+function rWebtoon(){
+  var i=curStepIdx(),st=STEPS[i],c=core.steps[i]||0,T=core.totalCuts,g=todayCutGoal();
+  $("#cur-step").innerHTML='<div class="nm">'+(i+1)+". "+esc(st.n)+'</div>'+
+    '<div class="mt">컷당 '+st.m+'분 · 이 단계 총 '+(st.m*T/60).toFixed(1)+'시간'+(g?" · 오늘 목표 "+g.cuts+"컷":"")+'</div>'+
+    '<div class="ctrl"><span class="num">'+c+'<small> / '+T+'컷</small></span>'+
+    '<button data-st="'+i+'" data-v="-1">−1</button><button data-st="'+i+'" data-v="1">+1</button>'+
+    '<button data-st="'+i+'" data-v="5">+5</button></div>';
+  var dm=doneMin(),tm=totalMin(),gm=targetMin(),p=tm?dm/tm*100:0,gp=tm?Math.min(100,gm/tm*100):0;
+  $("#w-pct").textContent=p.toFixed(1)+"%";
+  $("#w-hours").innerHTML=(dm/60).toFixed(1)+" / "+(tm/60).toFixed(0)+"시간";
+  var wb=$("#w-bar"); wb.style.width=p.toFixed(1)+"%"; wb.className=p>=gp?"gold":(p<gp-8?"bad":"");
+  $("#w-gh").style.left=gp.toFixed(1)+"%";
+  var dc=0; for(var k=0;k<20;k++) dc+=(core.steps[k]||0);
+  $("#w-cuts").textContent=dc+" / "+(20*T)+" 컷·단계";
+  $("#w-diff").textContent=(p-gp>=0?"목표선 +":"목표선 ")+(p-gp).toFixed(1)+"%p";
+  $("#w-total").value=T;
+  var mo=null; for(var q=0;q<MONTHS.length;q++) if(MONTHS[q].m===YM) mo=MONTHS[q];
+  $("#w-month").innerHTML=mo?'<div style="font-size:16px;font-weight:800;margin-bottom:6px;word-break:keep-all">'+
+    esc(mo.g)+'</div><p class="note">배정 <b>'+mo.h+'시간</b> · 하루 평균 <b>'+(mo.h*60/30).toFixed(0)+
+    '분</b> · <span class="tag">'+esc(mo.ph)+'</span></p>':'<p class="note">계획 기간 밖이야.</p>';
+  $("#w-steps").innerHTML=STEPS.map(function(s,k2){var cc=core.steps[k2]||0;
+    return '<div class="step '+(cc>=T?"done":"")+' '+(k2===i?"on":"")+'"><span class="n">'+(k2+1)+'</span>'+
+      '<span class="body"><span class="nm" style="display:block">'+esc(s.n)+'</span>'+
+      '<span class="meta" style="display:block">컷당 '+s.m+'분 · 총 '+(s.m*T/60).toFixed(1)+'시간</span></span>'+
+      '<span class="cnt">'+cc+'<small>/'+T+'</small></span></div>'}).join("");
+  var W=320,H=124,pd=6,cum=0,pts=[];
+  MONTHS.forEach(function(m2,k3){if(m2.m>"2026-10")cum+=m2.h*60*(T/90);pts.push([k3,cum])});
+  var mx=cum||1;
+  function px(k4){return pd+k4/(MONTHS.length-1)*(W-pd*2)} function py(v){return H-pd-v/mx*(H-pd*2)}
+  var line=pts.map(function(a,j){return (j?"L":"M")+px(a[0]).toFixed(1)+" "+py(a[1]).toFixed(1)}).join(" ");
+  var nk=-1; for(var z=0;z<MONTHS.length;z++) if(MONTHS[z].m===YM) nk=z;
+  var v=themeById(prefs.theme)[prefs.mode];
+  $("#w-chart").innerHTML='<svg viewBox="0 0 '+W+' '+(H+22)+'" style="width:100%;display:block">'+
+    '<path d="'+line+'" fill="none" stroke="'+v["--txt2"]+'" stroke-width="1.5" stroke-dasharray="4 3"/>'+
+    '<circle cx="'+(nk>=0?px(nk):px(0)).toFixed(1)+'" cy="'+py(Math.min(mx,dm)).toFixed(1)+
+    '" r="5.5" fill="'+v["--acc"]+'" stroke="'+v["--surf"]+'" stroke-width="2"/>'+
+    '<text x="'+pd+'" y="'+(H+16)+'" font-size="10" fill="'+v["--txt3"]+'">26.9</text>'+
+    '<text x="'+((W/2-14)|0)+'" y="'+(H+16)+'" font-size="10" fill="'+v["--txt3"]+'">27.4</text>'+
+    '<text x="'+((W-pd-26)|0)+'" y="'+(H+16)+'" font-size="10" fill="'+v["--txt3"]+'">27.12</text></svg>'+
+    '<p class="note" style="margin-top:8px">점선이 목표선, 동그라미가 지금 너. 점이 선 위면 앞서는 중.</p>';
+}
+
+function rPractice(){
+  var c=currOf(TODAY),dow=new Date(TODAY).getDay();
+  var stars=""; for(var i=0;i<5;i++) stars+=(i<c.lv?"★":"☆");
+  $("#prac-today").innerHTML='<div style="font-size:13px;font-weight:800;color:var(--txt2)">'+esc(c.nm)+
+    ' <span class="stars">'+stars+'</span></div><div style="font-size:20px;font-weight:800;margin:10px 0 12px;line-height:1.4;word-break:keep-all">'+
+    esc(c.days[dow])+'</div><p class="note">하루 <b>'+c.min+'분</b> · '+DOW[dow]+'요일 과제. 시간 넘기면 오히려 안 좋아, 타이머 켜.</p>';
+  $("#prac-week").innerHTML='<p class="note" style="margin-bottom:14px">'+esc(c.why)+'</p>'+
+    c.days.map(function(d,k){return '<div class="row" style="'+(k===dow?"background:var(--goldbg);margin:0 -10px;padding:11px 10px;border-radius:var(--rs)":"")+'">'+
+      '<span class="k">'+DOW[k]+'</span><span style="flex:1;text-align:right;font-size:14px;word-break:keep-all">'+esc(d)+'</span></div>'}).join("");
+  $("#prac-all").innerHTML=CURR.map(function(x){var s2="";for(var j=0;j<x.lv;j++)s2+="★";
+    return '<div class="mo '+(x.id===c.id?"cur":"")+' '+(x.to<TODAY?"past":"")+'" style="flex-direction:column;gap:5px;align-items:stretch">'+
+      '<div style="display:flex;justify-content:space-between;gap:8px"><b style="font-size:14.5px">'+esc(x.nm)+'</b>'+
+      '<span style="font-size:12px;font-weight:800;color:var(--txt2);white-space:nowrap">'+x.min+'분 <span class="stars">'+s2+'</span></span></div>'+
+      '<div style="font-size:12.5px;color:var(--txt2)">'+x.from.slice(2).replace(/-/g,".")+' – '+x.to.slice(2).replace(/-/g,".")+'</div>'+
+      '<div style="font-size:13.5px;word-break:keep-all">'+esc(x.why)+'</div></div>'}).join("");
+}
+
+function rMoney(){
+  $("#flow-tbl").innerHTML=FLOW.map(function(r){
+    return '<tr class="'+(r[3]?"key":"")+'"><td>'+esc(r[0])+'</td><td class="a '+(r[1]>0?"plus":(r[1]<0?"minus":""))+'">'+
+      (r[1]==null?"":(r[1]>0?"+":"")+r[1].toLocaleString("ko-KR"))+'</td><td class="b">'+r[2].toLocaleString("ko-KR")+'</td></tr>'}).join("");
+  $("#flow-warn").innerHTML="<b>여행 총예산 120만원.</b> 항공 35만 + 숙박 18만 + 현지 67만.<br>"+
+    "⚠︎ 여행이 <b>11월 5일 이전</b>이면 11월 용돈 전이라 40만원이 비어. 날짜를 중순 이후로 잡거나 10월에 더 아껴야 해.<br>"+
+    "⚠︎ 항공+숙박이 <b>53만원</b>을 넘으면, 넘은 만큼 쇼핑 예산(18만)에서 뺀다.";
+  var plan=PLAN_BAL[YM];
+  $("#sv-amt").textContent=won(core.savings);
+  if(plan!=null){var pp=Math.max(0,Math.min(100,core.savings/plan*100)),d=core.savings-plan;
+    $("#sv-bar").style.width=pp+"%"; $("#sv-bar").className=core.savings>=plan?"gold":"bad";
+    $("#sv-sub").innerHTML=(+YM.slice(5))+"월 말 계획선<br>"+won(plan);
+    $("#sv-l").innerHTML=d>=0?"계획보다 <b>"+won(d)+"</b> 여유":"계획보다 <b>"+won(-d)+"</b> 부족";}
+  else{$("#sv-bar").style.width="100%";$("#sv-bar").className="gold";
+    $("#sv-sub").innerHTML="여행 이후 구간";$("#sv-l").textContent="비상금 목표 30만원";}
+  var B=budgetFor(YM),md=moData(YM),tot=0,sp=0,k;
+  for(k in B) tot+=B[k];
+  md.tx.forEach(function(t){sp+=t.a});
+  $("#mo-label").textContent=YM.slice(0,4)+"년 "+(+YM.slice(5))+"월";
+  $("#mo-left").textContent=won(tot-sp);
+  $("#mo-spent").textContent=won(sp)+" 씀"; $("#mo-budget").textContent="/ "+won(tot);
+  var pct=Math.min(100,sp/tot*100),mb=$("#mo-bar");
+  mb.style.width=pct.toFixed(1)+"%"; mb.className=sp>tot?"bad":(pct>80?"gold":"");
+  $("#mo-hint").innerHTML=YM==="2026-09"
+    ?"9월 용돈은 이미 받은 상태야. 이 18만원은 <b>남은 23일치</b>고, 항공권 35만은 여기서 빠지는 게 아니라 잔액에서 따로 나가."
+    :(YM<="2026-11"?"여행 저축 중이라 한도가 낮아. 이 달만 참으면 돼.":"12월부터 평상시 예산 60만원.");
+  var opts=""; for(k in B) opts+='<option>'+esc(k)+'</option>';
+  $("#ex-cat").innerHTML=opts;
+  $("#amt-chips").innerHTML=[1000,3000,5000,10000,30000].map(function(v){
+    return '<button data-amt="'+v+'">+'+v.toLocaleString("ko-KR")+'</button>'}).join("");
+  var rows=""; for(k in B){var s3=0;
+    md.tx.forEach(function(t){if(t.c===k)s3+=t.a});
+    rows+='<div class="row"><span class="k">'+esc(k)+'</span><span class="v '+(s3>B[k]?"over":"")+'">'+
+      won(B[k]-s3)+' <small>/ '+B[k].toLocaleString("ko-KR")+'</small></span></div>';}
+  $("#cat-rows").innerHTML=rows+'<div class="row tot"><span class="k">합계</span><span class="v">'+
+    won(tot-sp)+' <small>/ '+tot.toLocaleString("ko-KR")+'</small></span></div>';
+  $("#tx-list").innerHTML=md.tx.length?md.tx.map(function(t,k5){return{t:t,k:k5}}).reverse().map(function(o){
+    return '<div class="tx"><span>'+o.t.d.slice(5)+' · '+esc(o.t.c)+(o.t.n?" · "+esc(o.t.n):"")+'</span>'+
+      '<span><b>'+won(o.t.a)+'</b> <button data-del="'+o.k+'">×</button></span></div>'}).join("")
+    :'<p class="note">아직 기록 없음. 위에서 금액을 넣으면 여기 쌓여.</p>';
+}
+
+function score(d){var a=stamps[d]||[];return a.length>=5?"s5":(a.length>=3?"s3":(a.length>=1?"s1":""))}
+
+function rCal(){
+  var p=calYM.split("-"),y=+p[0],m=+p[1];
+  $("#cal-title").textContent=y+"년 "+m+"월";
+  var first=new Date(y,m-1,1).getDay(),last=new Date(y,m,0).getDate(),h="";
+  for(var i=0;i<7;i++) h+='<div class="hd">'+DOW[i]+'</div>';
+  for(i=0;i<first;i++) h+='<div class="cell pad"></div>';
+  for(var d=1;d<=last;d++){
+    var key=y+"-"+("0"+m).slice(-2)+"-"+("0"+d).slice(-2),n=(stamps[key]||[]).length;
+    h+='<div class="cell '+score(key)+' '+(key===TODAY?"today":"")+'"><span class="in">'+
+      '<span class="dd">'+d+'</span><span class="dot">'+(n||"")+'</span></span></div>';}
+  $("#cal-grid").innerHTML=h;
+  var l3="";
+  for(i=2;i>=0;i--){var dt=new Date(TODAY);dt.setDate(dt.getDate()-i);
+    var a=stamps[iso(dt)]||[],mk="";
+    STAMPS.forEach(function(s){mk+=(a.indexOf(s.id)>=0?s.mk:"·")});
+    l3+='<div class="row"><span class="k">'+iso(dt).slice(5)+' ('+DOW[dt.getDay()]+')</span>'+
+      '<span class="v" style="letter-spacing:.15em">'+mk+'</span></div>';}
+  $("#last3").innerHTML=l3;
+  var l4="";
+  for(var w=3;w>=0;w--){var cnt=0;
+    for(i=0;i<7;i++){var dt2=new Date(TODAY);dt2.setDate(dt2.getDate()-(w*7+i));
+      if((stamps[iso(dt2)]||[]).indexOf("work")>=0)cnt++;}
+    var bars=""; for(i=0;i<7;i++) bars+=(i<cnt?"■":"□");
+    l4+='<div class="row"><span class="k">'+(w===0?"이번 주":w+"주 전")+'</span><span class="v">'+bars+' '+cnt+'일</span></div>';}
+  $("#last4w").innerHTML=l4;
+  $("#mo-sum").innerHTML=STAMPS.map(function(s){var c2=0,k;
+    for(k in stamps) if(k.indexOf(YM)===0&&stamps[k].indexOf(s.id)>=0)c2++;
+    return '<div class="row"><span class="k">'+s.mk+' '+s.nm+'</span><span class="v">'+c2+'일</span></div>'}).join("");
+}
+
+function rPlan(){
+  $("#plan-road").innerHTML='<div class="panel flush"><div class="sec"><div class="cap">2026.9 → 2027.12 월별 목표</div></div>'+
+    MONTHS.map(function(mo){return '<div class="mo '+(mo.m===YM?"cur":(mo.m<YM?"past":""))+'">'+
+      '<span class="m">'+mo.m.slice(2).replace("-",".")+'</span><span class="g">'+esc(mo.g)+'</span>'+
+      '<span class="h">'+(mo.h?mo.h+"h":"—")+'</span></div>'}).join("")+'</div>'+
+    '<div class="panel"><div class="cap">이 계획의 핵심 숫자</div>'+
+    '<div class="row"><span class="k">총 작업량 (90컷 × 20단계)</span><span class="v">322.5시간</span></div>'+
+    '<div class="row"><span class="k">오늘부터 제출까지</span><span class="v">'+dbtw(TODAY,DUE)+'일</span></div>'+
+    '<div class="row"><span class="k">평균 필요 시간</span><span class="v">하루 42분</span></div>'+
+    '<div class="row"><span class="k">가장 바쁜 달 (27.3 / 27.5)</span><span class="v">하루 1시간 10분</span></div>'+
+    '<div class="row tot"><span class="k">완성 목표일</span><span class="v">2027.9.30</span></div>'+
+    '<p class="note" style="margin-top:12px">10·11·12월은 통째로 버퍼야. 후반부가 제일 한가하게 설계했어.</p></div>';
+
+  var keys=["A","B","C","D","E"];
+  $("#plan-time").innerHTML=keys.map(function(k){var S=SCHED[k];
+    return '<div class="panel flush"><div class="sec"><div class="cap">'+esc(S.nm)+'</div></div>'+
+      '<div style="padding:0 20px 20px">'+S.rows.map(function(r){
+        return '<div class="sch '+(r[2]?"key":"")+'"><span class="t">'+h12(r[0])+'</span><span class="a">'+esc(r[1])+'</span></div>'
+      }).join("")+'</div></div>'}).join("")+
+    '<div class="panel"><div class="cap">적용 구간</div>'+
+    '<div class="row"><span class="k">A형 · 재활기</span><span class="v">26.9.8 – 9.30</span></div>'+
+    '<div class="row"><span class="k">B형 · 기획·초반</span><span class="v">26.10.1 – 27.2.28</span></div>'+
+    '<div class="row"><span class="k">C형 · 본작업기</span><span class="v">27.3.1 – 27.9.30</span></div>'+
+    '<div class="row"><span class="k">D형 · 마무리</span><span class="v">27.10.1 – 27.12.10</span></div>'+
+    '<div class="row"><span class="k">E형 · 휴식일</span><span class="v">매주 일요일</span></div></div>';
+
+  $("#plan-slump").innerHTML=
+   '<div class="panel"><div class="cap">슬럼프 대응 · 며칠째냐에 따라 처방이 다르다</div>'+
+   '<div class="qa"><div class="q">1일차 — 하루 못 했다</div><div class="a">아무것도 안 한다. 하루 빠지는 건 계획의 <b>일부</b>야. 만회하려고 다음 날 2배 하는 게 오히려 이틀째 붕괴를 부른다.</div></div>'+
+   '<div class="qa"><div class="q">2~3일차 — 손이 안 간다</div><div class="a"><b>5분 타이머만 켠다.</b> 5분 후 그만둬도 도장은 찍힌다. 실제로는 대부분 계속하게 되는데, 그건 덤이고 목적이 아니야.</div></div>'+
+   '<div class="qa"><div class="q">4~7일차 — 파일 여는 것 자체가 무섭다</div><div class="a"><b>단계를 내려간다.</b> 선따기가 무거우면 밑색으로, 밑색도 무거우면 자료 수집으로. 머리를 덜 쓰는 작업으로 옮겨서 손만 움직여. 순서는 나중에 맞추면 돼.</div></div>'+
+   '<div class="qa"><div class="q">일주일 넘음</div><div class="a">계획을 다시 짜지 말고 <b>딱 한 컷만</b> 그린다. 제일 그리고 싶었던 컷으로. 진도표는 그 다음에 봐도 늦지 않아.</div></div>'+
+   '<div class="qa"><div class="q">2주 넘게 아무것도 안 됨</div><div class="a">이건 의지 문제가 아닐 확률이 높아. 몸·마음 탭 보고 상담을 잡아. 계획표로 해결하려 하면 자책만 쌓여.</div></div></div>'+
+   '<div class="panel"><div class="cap">애초에 슬럼프에 덜 빠지는 장치 8개</div><ol class="listy">'+
+   '<li><b>일부러 끝을 남긴다.</b> 오늘 작업을 끊을 때 다음 한 컷을 반쯤 그려놓고 덮어. 뇌는 미완성을 못 참아서 내일 시작 장벽이 훨씬 낮아진다.</li>'+
+   '<li><b>내일 첫 블록에 뭘 할지 한 줄 적고 잔다.</b> 아침에 "뭘 하지"를 정하는 데 드는 의지력이 제일 비싸다.</li>'+
+   '<li><b>순서대로 안 그려도 된다.</b> 같은 단계 안에서는 오늘 그리고 싶은 컷부터. 1번 컷이 어려워서 멈추는 게 제일 흔한 사고야.</li>'+
+   '<li><b>일부러 못 그리는 날을 만든다.</b> 한 달에 한 번 "최악의 그림 그리기". 잘 그려야 한다는 압력을 웃음으로 빼는 장치.</li>'+
+   '<li><b>매일 캔버스 스크린샷 1장.</b> 폴더에 쌓이면 타임랩스가 되고, 진도를 눈으로 실감하게 해준다. 숫자보다 이게 잘 먹혀.</li>'+
+   '<li><b>같이 작업하기.</b> 디스코드 통화 켜두고 각자 작업, 또는 유튜브 study with me. 혼자 방에서 버티는 것보다 훨씬 오래간다.</li>'+
+   '<li><b>새벽에 SNS 그림 보지 않기.</b> 피곤할 때 남의 완성작을 보면 비교만 남는다. 레퍼런스는 낮에, 작업 시작 전에.</li>'+
+   '<li><b>할 일 목록 대신 한 일 목록.</b> 밤에 오늘 한 걸 적어. 남은 게 아니라 쌓인 걸 세는 습관.</li></ol></div>'+
+   '<div class="panel"><div class="cap">작심삼일용 규칙 5개</div><ol class="listy">'+
+   '<li><b>최소 단위는 5분.</b> 0분과 5분의 차이가 5분과 60분의 차이보다 크다.</li>'+
+   '<li><b>이틀 연속으로는 안 빠진다.</b> 하루는 괜찮아. 이틀째가 신호야.</li>'+
+   '<li><b>사이클은 리셋되지 않는다.</b> 이미 모은 건 뺏기지 않아.</li>'+
+   '<li><b>못 한 날을 소급해서 자책하지 않는다.</b> 달력의 빈칸은 정보지 판결이 아니야.</li>'+
+   '<li><b>계획 수정은 일요일에만.</b> 평일에 계획을 고치는 건 대부분 도망이다.</li></ol></div>';
+
+  $("#plan-fun").innerHTML=
+   '<div class="panel"><div class="cap">그림 공부에 재미 붙이는 법</div><ul class="listy">'+
+   '<li><b>연습을 게임 UI로 바꾼다.</b> 30초 제스처 드로잉을 좋아하는 곡 틀고 타이머로. "잘 그리기"가 아니라 "시간 안에 끝내기"가 목표가 되면 부담이 놀이로 바뀐다.</li>'+
+   '<li><b>모작을 추리로 바꾼다.</b> 베끼기만 하지 말고 "이 작가는 왜 여기 선을 굵게 했을까"를 한 줄 적어. 답을 맞히려 하니까 재미가 생기고 남는 것도 많아진다.</li>'+
+   '<li><b>색감 스터디는 좋아하는 영화로.</b> 스크린샷에서 색 5개 뽑아 팔레트로 저장. 공부인데 결과물이 예뻐서 계속하게 돼.</li>'+
+   '<li><b>하는 게임 5개가 전부 교재다.</b> 캐릭터 디자인, 이펙트, UI 색배합, 일러스트 구도. 팬아트를 그리면 게임 시간이 소비가 아니라 <b>재료</b>가 된다. 지금 너한테 제일 효율 좋은 연결이야.</li>'+
+   '<li><b>주 1회 SNS에 10분 그림 올리기.</b> 외부 반응은 내 의욕보다 안정적인 연료야. 반응이 없어도 "올렸다"는 기록이 남는다.</li>'+
+   '<li><b>연습 폴더와 졸업작품 폴더를 물리적으로 분리.</b> 같은 폴더에 있으면 둘 다 의무가 된다. 연습 폴더에선 트레이싱·모작 전부 허용, 죄책감 금지.</li>'+
+   '<li><b>30일 챌린지에 얹어가기.</b> 인터넷에 도는 주제 챌린지 아무거나. 주제를 남이 정해주면 "뭘 그리지"를 고민 안 해도 된다.</li></ul></div>'+
+   '<div class="panel"><div class="cap">졸업작품을 즐겁게 그리는 법</div><ul class="listy">'+
+   '<li><b>제일 그리고 싶은 한 컷을 먼저 완성한다.</b> 순서를 어기고 10월 안에 딱 한 컷만 풀채색으로. 그게 "이걸 만들려고 하는 거다"의 기준점이 되고, 힘들 때 돌아볼 곳이 생겨.</li>'+
+   '<li><b>작품에 네가 좋아하는 걸 넣는다.</b> 하는 게임에서 좋아하는 요소 — 분위기, 색, 관계, 세계관 — 를 하나씩. 남한테 보여줄 작품이 아니라 <b>보고 싶은 걸 만드는 일</b>로 바뀐다.</li>'+
+   '<li><b>캐릭터한테 애착부터 만든다.</b> 설정 낙서, 표정 시트, 사복 디자인. 애정 없는 캐릭터를 90컷 그리는 건 고문이야. 여기 쓰는 시간은 낭비가 아니라 연료 충전.</li>'+
+   '<li><b>작품 전용 플레이리스트를 만든다.</b> 그 음악을 틀면 작업 모드로 들어가는 스위치가 된다. 파블로프식이지만 진짜 잘 들어.</li>'+
+   '<li><b>단계 완료 때마다 보상.</b> 매달 예산에 보상비 4만원을 넣어놨어. 한 단계 90컷을 다 끝내면 그걸로 뭘 살지 미리 정해둬.</li>'+
+   '<li><b>중간에 남한테 보여준다.</b> 러프 끝나면 친구한테. 완성 후 평가는 무섭지만 러프 단계 반응은 순수한 연료야.</li>'+
+   '<li><b>완벽주의는 단계로 막는다.</b> 러프에서 잘 그리려 하지 마. 20단계로 나눈 이유가 그거야. 각 단계는 그 단계 일만 하면 돼.</li></ul></div>';
+
+  $("#plan-body").innerHTML=
+   '<div class="panel"><div class="cap">몸</div><ul class="listy">'+
+   '<li><b>기상 1시간 안에 햇빛 20분.</b> 수면 리듬과 기분에 가장 값싸게 듣는 방법. 집 앞 한 바퀴로 충분해.</li>'+
+   '<li><b>수면 8시간 고정.</b> 밤 12시 취침 / 오전 8시 30분 기상. 주말도 ±1시간 안에서.</li>'+
+   '<li><b>25분마다 손목·어깨·목 스트레칭.</b> 웹툰 작업자 손목은 소모품이야. 졸업작품보다 훨씬 오래 써야 해.</li>'+
+   '<li><b>물 1.5L, 하루 한 끼는 따뜻한 밥.</b></li>'+
+   '<li><b>주 2회 20분 홈트</b> 또는 산책 30분으로 대체.</li>'+
+   '<li><b>게임 5개 → 3개.</b> 일일 숙제 5개면 하루 100~150분이야. 의무로 하는 게임은 휴식이 아니라 두 번째 노동이야. 이번 주에 재미 점수 10점 만점으로 매기고 하위 2개는 접거나 주말 전용으로.</li></ul></div>'+
+   '<div class="panel"><div class="cap">마음</div><p class="note">"게임도 그림도 즐겁지 않고 의무감뿐"이라는 건 게으름이 아니라 <b>즐거움을 느끼는 기능이 낮아진 상태</b>일 수 있어. 이 계획은 그 상태에서도 굴러가게 설계했지만, 계획이 그걸 치료하지는 못해. 두 달 넘게 계속되면 상담을 한 번 받아보는 게 좋아.<br><br>· 정신건강 상담전화 <b>1577-0199</b> — 24시간, 무료<br>· 자치구 정신건강복지센터 — 무료 상담<br>· 청년 마음건강 지원 사업 — 만 19~34세 심리상담 바우처. 주민센터나 복지로에서 조건 확인<br>· 학교 학생상담센터 — 휴학생도 되는 곳이 많아. 전화 한 통이면 확인돼</p></div>'+
+   '<div class="panel"><div class="cap">데이터</div><p class="note" id="store-note"></p>'+
+   '<button id="wipe" class="tbtn" style="height:44px;padding:0 20px;margin-top:12px;color:var(--bad);border-color:var(--bad)">전체 초기화</button></div>';
+  var sn=$("#store-note");
+  if(sn) sn.innerHTML=STORE.mode==="memory"
+    ? "⚠︎ 이 브라우저에서 저장이 막혀 있어. 새로고침하면 기록이 날아가. 설치·백업 탭을 봐."
+    : "진도·도장·가계부는 이 기기에 자동 저장돼. 정기적으로 설치·백업 탭에서 백업 코드를 떠 둬.";
+
+  var standalone=false;
+  try{ standalone=(window.navigator.standalone===true)||
+    (window.matchMedia&&window.matchMedia("(display-mode: standalone)").matches); }catch(e){}
+  var ios=/iPad|iPhone|iPod/.test(navigator.userAgent);
+  var local=(location.protocol==="file:");
+
+  $("#plan-install").innerHTML=
+   '<div class="panel"><div class="cap">지금 상태</div>'+
+   '<div class="ok">'+(standalone?"홈 화면 앱으로 실행 중이야. 이게 제일 좋은 상태.":
+     (local?"⚠︎ 파일을 직접 연 상태(file://)야. 아이폰에서는 저장이 안 되거나 화면이 멈출 수 있어. 아래 방법으로 웹 주소를 만들어서 홈 화면에 추가해.":
+     "브라우저에서 실행 중이야. 아래 2단계를 하면 홈 화면 아이콘으로 바뀌어."))+'</div>'+
+   '<div class="row" style="margin-top:14px"><span class="k">저장 방식</span><span class="v">'+
+     (STORE.mode==="claude"?"Claude 계정 동기화":(STORE.mode==="local"?"이 기기 브라우저":"메모리 · 저장 안 됨"))+'</span></div>'+
+   '<div class="row"><span class="k">주소</span><span class="v" style="font-size:12px;white-space:normal;text-align:right;word-break:break-all">'+
+     esc(location.href.slice(0,60))+'</span></div></div>'+
+
+   '<div class="panel"><div class="cap">1단계 · 웹 주소 만들기 (한 번만)</div>'+
+   '<p class="note" style="margin-bottom:14px">아이폰은 보안 정책 때문에 저장된 HTML 파일을 사파리로 못 열어. 파일 앱 미리보기는 자바스크립트를 실행하지 않아서 "불러오는 중"에서 멈춰. 그래서 이 파일을 인터넷 주소로 한 번 올려두면 그 다음부터는 전부 해결돼. 무료고 영구히 유지되는 방법은 GitHub Pages야.</p>'+
+   '<div class="stepn"><span class="no">1</span><span class="tx">사파리에서 <b>github.com</b> 접속 → 회원가입 (이메일·비밀번호·아이디만)</span></div>'+
+   '<div class="stepn"><span class="no">2</span><span class="tx">우측 상단 <b>+</b> → <b>New repository</b>. 이름은 아무거나(예: plan), <b>Public</b> 선택 → Create</span></div>'+
+   '<div class="stepn"><span class="no">3</span><span class="tx"><b>uploading an existing file</b> 링크 → 계획표 파일 선택 → 올린 뒤 파일 이름을 <b>index.html</b>로 바꿔서 Commit</span></div>'+
+   '<div class="stepn"><span class="no">4</span><span class="tx">저장소 <b>Settings</b> → 왼쪽 <b>Pages</b> → Branch를 <b>main</b>으로 두고 Save</span></div>'+
+   '<div class="stepn"><span class="no">5</span><span class="tx">1~2분 뒤 <b>아이디.github.io/plan</b> 주소가 생겨. 그게 네 계획표 주소야</span></div>'+
+   '<p class="note" style="margin-top:14px">더 간단한 대안: <b>netlify.com</b> 무료 가입 후 Add new site → Deploy manually에 파일을 끌어다 놓으면 바로 주소가 나와. 가입 없이 쓰는 tiiny.host 같은 곳은 무료 링크가 만료되니까 15개월 쓸 거면 피해.</p></div>'+
+
+   '<div class="panel"><div class="cap">2단계 · 홈 화면에 추가</div>'+
+   '<div class="stepn"><span class="no">1</span><span class="tx"><b>사파리</b>로 그 주소를 열어 (크롬 말고 사파리로 해야 확실해)</span></div>'+
+   '<div class="stepn"><span class="no">2</span><span class="tx">아래 <b>공유 버튼</b>(네모에 화살표) 탭</span></div>'+
+   '<div class="stepn"><span class="no">3</span><span class="tx">목록을 내려서 <b>홈 화면에 추가</b> 탭 → 추가</span></div>'+
+   '<div class="stepn"><span class="no">4</span><span class="tx">홈 화면에 아이콘이 생겨. 탭하면 주소창 없이 앱처럼 열리고, 저장 공간도 사파리와 분리돼서 더 안전해</span></div>'+
+   '<p class="note" style="margin-top:14px">맥북·PC는 그냥 그 주소를 북마크하면 돼. 다만 <b>기록은 기기마다 따로 저장돼.</b> 아이폰에서 찍은 도장이 맥북에 안 나타나니까, 주력 기기 하나를 정하고 나머지는 백업 코드로 옮겨.</p></div>'+
+
+   '<div class="panel"><div class="cap">백업 · 기기 간 옮기기</div>'+
+   '<p class="note">아이폰은 <b>7일 이상 안 열면 브라우저 저장 데이터를 지울 수 있어.</b> 매일 쓸 거라 걸릴 일은 거의 없지만, 여행 갔다 오거나 한동안 안 열 것 같으면 미리 백업해 둬. 한 달에 한 번이면 충분해.</p>'+
+   '<div class="btnrow"><button id="bk-make" class="pri">백업 코드 만들기</button>'+
+   '<button id="bk-copy">복사</button><button id="bk-file">파일로 저장</button></div>'+
+   '<textarea class="bkbox hide" id="bk-box" spellcheck="false" placeholder="백업 코드가 여기 나와. 메모 앱에 붙여넣어 두면 돼."></textarea>'+
+   '<div class="btnrow"><button id="bk-open">복원하기 (코드 붙여넣기)</button></div>'+
+   '<p class="note" id="bk-msg" style="margin-top:10px"></p></div>'+
+
+   '<div class="panel"><div class="cap">데이터 지우기</div>'+
+   '<p class="note">진도·도장·가계부를 전부 지우고 처음부터 시작해. 되돌릴 수 없어.</p>'+
+   '<div class="btnrow"><button id="wipe2" style="color:var(--bad);border-color:var(--bad)">전체 초기화</button></div></div>';
+}
+
+function rAll(){rTop();rNow();rTodo();rStamps();rDday();rWebtoon();rPractice();rMoney();rCal();rPlan();}
+
+/* ══════ 이벤트 ══════ */
+document.addEventListener("click",function(e){
+  var t=e.target;
+  while(t&&t.tagName!=="BUTTON"&&t!==document.body) t=t.parentNode;
+  if(!t||t.tagName!=="BUTTON") return;
+  var d=t.dataset||{};
+
+  if(t.id==="modeToggle"||t.id==="modeToggle2"){
+    prefs.mode=prefs.mode==="dark"?"light":"dark"; savePrefs(); applyTheme();
+    if(!$("#sheet").classList.contains("hide")) renderThemeList(); rWebtoon(); return;}
+  if(t.id==="themeBtn"){$("#sheet").classList.remove("hide");renderThemeList();window.scrollTo(0,0);return;}
+  if(t.id==="sheetClose"){$("#sheet").classList.add("hide");return;}
+  if(d.th){prefs.theme=d.th;savePrefs();applyTheme();renderThemeList();rWebtoon();return;}
+
+  if(d.t){tab=d.t;
+    var tb=$("#tabs").children;
+    for(var i=0;i<tb.length;i++) tb[i].setAttribute("aria-selected",tb[i].dataset.t===tab);
+    ["today","webtoon","practice","money","cal","plan"].forEach(function(k){
+      $("#t-"+k).classList[k===tab?"remove":"add"]("hide")});
+    window.scrollTo(0,0); return;}
+  if(d.p){seg=d.p;
+    var sb=$("#plan-seg").children;
+    for(var j=0;j<sb.length;j++) sb[j].setAttribute("aria-selected",sb[j].dataset.p===seg);
+    ["road","time","slump","fun","body","install"].forEach(function(k){
+      $("#plan-"+k).classList[k===seg?"remove":"add"]("hide")});
+    window.scrollTo(0,0); return;}
+  if(d.s){var cur=todayStamps().slice(),ix=cur.indexOf(d.s);
+    if(ix>=0)cur.splice(ix,1); else cur.push(d.s);
+    if(cur.length) stamps[TODAY]=cur; else delete stamps[TODAY];
+    saveStamps(); rStamps(); rCal(); return;}
+  if(d.st!==undefined&&d.st!==""){var si=+d.st;
+    core.steps[si]=Math.max(0,Math.min(core.totalCuts,(core.steps[si]||0)+(+d.v)));
+    saveCore(); rWebtoon(); rDday(); rTodo(); return;}
+  if(d.amt){var el=$("#ex-amt"); el.value=(+el.value||0)+(+d.amt); return;}
+  if(d.del!==undefined&&d.del!==""){moData(YM).tx.splice(+d.del,1); saveCore(); rMoney(); return;}
+  if(t.id==="w-save-total"){var v2=Math.max(60,Math.min(140,+$("#w-total").value||90));
+    core.totalCuts=v2;
+    for(var k3 in core.steps) core.steps[k3]=Math.min(core.steps[k3],v2);
+    saveCore(); rWebtoon(); rDday(); rTodo(); return;}
+  if(t.id==="sv-go"){var v3=+$("#sv-in").value;
+    if(!isNaN(v3)&&v3>=0){core.savings=v3;$("#sv-in").value="";saveCore();rMoney();} return;}
+  if(t.id==="ex-go"){var a=+$("#ex-amt").value;
+    if(a>0){moData(YM).tx.push({d:TODAY,c:$("#ex-cat").value,a:a,n:$("#ex-memo").value.replace(/^\s+|\s+$/g,"")});
+      $("#ex-amt").value="";$("#ex-memo").value="";saveCore();rMoney();} return;}
+  if(t.id==="cal-prev"||t.id==="cal-next"){var cp=calYM.split("-");
+    var nd=new Date(+cp[0],+cp[1]-1+(t.id==="cal-next"?1:-1),1);
+    calYM=nd.getFullYear()+"-"+("0"+(nd.getMonth()+1)).slice(-2); rCal(); return;}
+  if(t.id==="wipe"||t.id==="wipe2"){ if(window.confirm("진도·도장·가계부를 전부 지울까? 되돌릴 수 없어.")){
+    core={totalCuts:90,steps:{},savings:666334,money:{}}; stamps={};
+    STORE.set(KC,JSON.stringify(core)); STORE.set(KS,JSON.stringify(stamps)); rAll();} return;}
+
+  if(t.id==="bk-make"){ var bx=$("#bk-box");
+    bx.value="WTPLAN1|"+JSON.stringify({c:core,s:stamps,p:prefs,d:TODAY});
+    bx.classList.remove("hide");
+    $("#bk-msg").innerHTML="이 코드를 통째로 복사해서 <b>메모 앱</b>이나 나한테 보내는 메시지에 붙여넣어 둬. 나중에 이걸 다시 붙여넣으면 그대로 복원돼."; return;}
+
+  if(t.id==="bk-copy"){ var bx2=$("#bk-box");
+    if(!bx2.value){ $("#bk-msg").textContent="먼저 '백업 코드 만들기'를 눌러."; return; }
+    var done=function(){ $("#bk-msg").textContent="복사했어. 메모 앱에 붙여넣어 둬."; };
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(bx2.value).then(done,function(){
+        bx2.classList.remove("hide"); bx2.select(); $("#bk-msg").textContent="자동 복사가 막혔어. 위 칸을 길게 눌러서 전체 선택 후 복사해."; });
+    } else { bx2.classList.remove("hide"); bx2.select();
+      $("#bk-msg").textContent="위 칸을 길게 눌러서 전체 선택 후 복사해."; }
+    return;}
+
+  if(t.id==="bk-file"){ try{
+      var data="WTPLAN1|"+JSON.stringify({c:core,s:stamps,p:prefs,d:TODAY});
+      var url=URL.createObjectURL(new Blob([data],{type:"text/plain;charset=utf-8"}));
+      var a=document.createElement("a"); a.href=url; a.download="계획표-백업-"+TODAY+".txt";
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      setTimeout(function(){URL.revokeObjectURL(url)},2000);
+      $("#bk-msg").textContent="다운로드했어. 파일 앱에 저장해 두면 돼.";
+    }catch(e){ $("#bk-msg").textContent="파일 저장이 안 돼. '백업 코드 만들기'로 복사해서 써."; } return;}
+
+  if(t.id==="bk-open"){ var v=window.prompt("백업 코드를 붙여넣어. 지금 기록은 전부 덮어써져.","");
+    if(!v) return;
+    try{ v=v.replace(/^\s+|\s+$/g,"");
+      if(v.indexOf("WTPLAN1|")===0) v=v.slice(8);
+      var o=JSON.parse(v);
+      if(!o||!o.c) throw new Error("형식이 안 맞아");
+      core=o.c; stamps=o.s||{}; if(o.p){ prefs=o.p; }
+      STORE.set(KC,JSON.stringify(core)); STORE.set(KS,JSON.stringify(stamps)); STORE.set(KP,JSON.stringify(prefs));
+      applyTheme(); rAll();
+      $("#bk-msg").textContent="복원했어.";
+    }catch(err){ window.alert("코드를 읽지 못했어. 중간이 잘리지 않았는지 확인해봐."); }
+    return;}
+});
+
+/* 홈 화면 추가용 매니페스트 (안드로이드·크롬용. 아이폰은 위 meta 태그로 동작) */
+try{
+  var ic=document.querySelector('link[rel="apple-touch-icon"]');
+  var mf={name:"나의 계획표",short_name:"계획표",start_url:location.href.split("#")[0],
+    scope:"./",display:"standalone",orientation:"portrait",
+    background_color:"#e9eae4",theme_color:"#e9eae4",
+    icons:ic?[{src:ic.getAttribute("href"),sizes:"180x180",type:"image/png",purpose:"any maskable"}]:[]};
+  var ml=document.createElement("link"); ml.rel="manifest";
+  ml.href="data:application/manifest+json;charset=utf-8,"+encodeURIComponent(JSON.stringify(mf));
+  document.head.appendChild(ml);
+}catch(e){}
+
+/* 부팅: 저장소가 응답하지 않아도 2초 뒤에는 무조건 화면을 띄운다 */
+var booted=false;
+function boot(){
+  if(booted) return; booted=true;
+  try{
+    applyTheme();
+    var b=$("#boot"); if(b&&b.parentNode) b.parentNode.removeChild(b);
+    $("#t-today").classList.remove("hide");
+    rAll();
+    setInterval(rNow,60000);
+  }catch(err){
+    document.getElementById("wrap").innerHTML=
+      '<div style="padding:24px;font-size:15px;line-height:1.7">오류가 났어. 새로고침해봐.<br><br>'+
+      esc(String(err&&err.message?err.message:err))+'</div>';
+  }
+}
+setTimeout(boot,2000);
+try{ load().then(boot,boot); }catch(e){ boot(); }
+})();
+</script>
+</body>
+</html>
